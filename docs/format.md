@@ -28,6 +28,8 @@
 - **`docs/lower-secondary/science/field-<分野>.md`**：中学校理科の第1分野と第2分野
 - **`docs/<段階>/<教科ID>/english.md`**：外国語の英語の目標、内容、指導計画の作成と内容の取扱い
 - **`docs/<段階>/<教科ID>/planning.md`**：指導計画の作成と内容の取扱い
+- **`docs/reference/<資料>/`**：学習指導要領以外の参考資料
+  - 音訓：`docs/reference/onkun/`。書き方は[音訓の割り振り](reference/onkun/README.md#書き方)
 - **`docs/elementary/japanese/kanji.md`**：小学校の学年別漢字配当表
   - 補足：中学校の学習指導要領には漢字配当表がない
 - **教科ID**：`japanese`、`social-studies`、`math`、`science`、`foreign-language`
