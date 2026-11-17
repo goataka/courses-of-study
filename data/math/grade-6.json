@@ -1,0 +1,92 @@
+{
+  "id": "math-g6",
+  "subject": "math",
+  "grades": [6],
+  "name": "第6学年",
+  "code": "8250260000000000",
+  "goals": [
+    {"id": "math-g6-goal-1", "code": "8250262100000000", "no": "(1)", "kind": "goal", "category": "knowledge", "text": "分数の計算の意味、文字を用いた式、図形の意味、図形の体積、比例、度数分布を表す表などを理解する。分数の計算、図形の構成、図形の面積や体積の求め方、表やグラフへの表現などの技能を身に付ける"},
+    {"id": "math-g6-goal-2", "code": "8250262200000000", "no": "(2)", "kind": "goal", "category": "thinking", "text": "数とその表現や計算の意味に着目し、発展的に考察して問題を見いだす。目的に応じて多様な表現方法を用いながら、数の表し方や計算の仕方を考察する力を養う。図形の構成要素や図形間の関係に着目し、図形の性質や計量を考察する力を養う。伴って変わる二つの数量やその関係に着目し、変化や対応の特徴を見いだして、二つの数量の関係を表や式、グラフを用いて考察する力を養う。身の回りの事象から設定した問題について、目的に応じてデータを収集し、データの特徴や傾向に着目して適切な手法を選択して分析し、それらを用いて問題解決したり、解決の過程や結果を批判的に考察したりする力を養う"},
+    {"id": "math-g6-goal-3", "code": "8250262300000000", "no": "(3)", "kind": "goal", "category": "attitude", "text": "数学的に表現し処理したことを振り返り、多面的に捉え検討して、よりよいものを求めて粘り強く考える態度を養う。数学のよさに気付き、学習したことを生活や学習に活用しようとする態度を養う"}
+  ],
+  "contents": [
+    {"id": "math-g6-A", "code": "8250263100000000", "no": "A", "kind": "section", "title": "数と計算", "children": [
+      {"id": "math-g6-A-1", "code": "8250263110000000", "no": "(1)", "kind": "section", "title": "分数の乗法及び除法", "children": [
+        {"id": "math-g6-A-1-a-a", "code": "8250263111100000", "no": "ア(ア)", "kind": "item", "category": "knowledge", "text": "乗数や除数が整数や分数である場合も含めて、分数の乗法と除法の意味を理解する", "keywords": ["分数の乗法と除法"]},
+        {"id": "math-g6-A-1-a-i", "code": "8250263111200000", "no": "ア(イ)", "kind": "item", "category": "knowledge", "text": "分数の乗法と除法の計算ができる"},
+        {"id": "math-g6-A-1-a-u", "code": "8250263111300000", "no": "ア(ウ)", "kind": "item", "category": "knowledge", "text": "分数の乗法と除法についても、整数の場合と同じ関係や法則が成り立つことを理解する"},
+        {"id": "math-g6-A-1-i-a", "code": "8250263112100000", "no": "イ(ア)", "kind": "item", "category": "thinking", "text": "数の意味と表現、計算について成り立つ性質に着目し、計算の仕方を多面的に捉え考える"}
+      ]},
+      {"id": "math-g6-A-2", "code": "8250263120000000", "no": "(2)", "kind": "section", "title": "数量の関係を表す式", "children": [
+        {"id": "math-g6-A-2-a-a", "code": "8250263121100000", "no": "ア(ア)", "kind": "item", "category": "knowledge", "text": "数量を表す言葉や□、△などの代わりに、a、x などの文字を用いて式に表したり、文字に数を当てはめて調べたりする", "keywords": ["文字"]},
+        {"id": "math-g6-A-2-i-a", "code": "8250263122100000", "no": "イ(ア)", "kind": "item", "category": "thinking", "text": "問題場面の数量の関係に着目し、数量の関係を簡潔かつ一般的に表現したり、式の意味を読み取ったりする"}
+      ]}
+    ]},
+    {"id": "math-g6-B", "code": "8250263200000000", "no": "B", "kind": "section", "title": "図形", "children": [
+      {"id": "math-g6-B-1", "code": "8250263210000000", "no": "(1)", "kind": "section", "title": "平面図形", "children": [
+        {"id": "math-g6-B-1-a-a", "code": "8250263211100000", "no": "ア(ア)", "kind": "item", "category": "knowledge", "text": "縮図や拡大図を理解する", "keywords": ["縮図", "拡大図"]},
+        {"id": "math-g6-B-1-a-i", "code": "8250263211200000", "no": "ア(イ)", "kind": "item", "category": "knowledge", "text": "対称な図形を理解する", "keywords": ["対称な図形"]},
+        {"id": "math-g6-B-1-i-a", "code": "8250263212100000", "no": "イ(ア)", "kind": "item", "category": "thinking", "text": "図形の構成要素と図形間の関係に着目し、構成の仕方を考察したり図形の性質を見いだしたりする。その性質を基に、既習の図形を捉え直したり日常生活に生かしたりする"}
+      ]},
+      {"id": "math-g6-B-2", "code": "8250263220000000", "no": "(2)", "kind": "section", "title": "身の回りにある形の概形やおよその面積など", "children": [
+        {"id": "math-g6-B-2-a-a", "code": "8250263221100000", "no": "ア(ア)", "kind": "item", "category": "knowledge", "text": "身の回りにある形について、その概形を捉え、およその面積などを求める", "keywords": ["概形", "およその面積"]},
+        {"id": "math-g6-B-2-i-a", "code": "8250263222100000", "no": "イ(ア)", "kind": "item", "category": "thinking", "text": "図形の構成要素や性質に着目し、筋道を立てて面積などの求め方を考え、日常生活に生かす"}
+      ]},
+      {"id": "math-g6-B-3", "code": "8250263230000000", "no": "(3)", "kind": "section", "title": "平面図形の面積", "children": [
+        {"id": "math-g6-B-3-a-a", "code": "8250263231100000", "no": "ア(ア)", "kind": "item", "category": "knowledge", "text": "円の面積の、計算による求め方を理解する", "keywords": ["円の面積"]},
+        {"id": "math-g6-B-3-i-a", "code": "8250263232100000", "no": "イ(ア)", "kind": "item", "category": "thinking", "text": "図形の構成要素などに着目し、基本的な図形の面積の求め方を見いだす。その表現を振り返り、簡潔かつ的確な表現に高め、公式として導く", "keywords": ["公式"]}
+      ]},
+      {"id": "math-g6-B-4", "code": "8250263240000000", "no": "(4)", "kind": "section", "title": "立体図形の体積", "children": [
+        {"id": "math-g6-B-4-a-a", "code": "8250263241100000", "no": "ア(ア)", "kind": "item", "category": "knowledge", "text": "基本的な角柱と円柱の体積の、計算による求め方を理解する", "keywords": ["角柱と円柱の体積"]},
+        {"id": "math-g6-B-4-i-a", "code": "8250263242100000", "no": "イ(ア)", "kind": "item", "category": "thinking", "text": "図形の構成要素に着目し、基本図形の体積の求め方を見いだす。その表現を振り返り、簡潔かつ的確な表現に高め、公式として導く"}
+      ]}
+    ]},
+    {"id": "math-g6-C", "code": "8250263300000000", "no": "C", "kind": "section", "title": "変化と関係", "children": [
+      {"id": "math-g6-C-1", "code": "8250263310000000", "no": "(1)", "kind": "section", "title": "伴って変わる二つの数量", "children": [
+        {"id": "math-g6-C-1-a-a", "code": "8250263311100000", "no": "ア(ア)", "kind": "item", "category": "knowledge", "text": "比例の関係の意味や性質を理解する", "keywords": ["比例"]},
+        {"id": "math-g6-C-1-a-i", "code": "8250263311200000", "no": "ア(イ)", "kind": "item", "category": "knowledge", "text": "比例の関係を用いた問題解決の方法を知る"},
+        {"id": "math-g6-C-1-a-u", "code": "8250263311300000", "no": "ア(ウ)", "kind": "item", "category": "knowledge", "text": "反比例の関係を知る", "keywords": ["反比例"]},
+        {"id": "math-g6-C-1-i-a", "code": "8250263312100000", "no": "イ(ア)", "kind": "item", "category": "thinking", "text": "伴って変わる二つの数量を見いだして、それらの関係に着目する。目的に応じて表や式、グラフを用いてそれらの関係を表現して、変化や対応の特徴を見いだし、日常生活に生かす"}
+      ]},
+      {"id": "math-g6-C-2", "code": "8250263320000000", "no": "(2)", "kind": "section", "title": "二つの数量の関係", "children": [
+        {"id": "math-g6-C-2-a-a", "code": "8250263321100000", "no": "ア(ア)", "kind": "item", "category": "knowledge", "text": "比の意味や表し方を理解し、数量の関係を比で表したり、等しい比をつくったりする", "keywords": ["比"]},
+        {"id": "math-g6-C-2-i-a", "code": "8250263322100000", "no": "イ(ア)", "kind": "item", "category": "thinking", "text": "日常の事象における数量の関係に着目し、図や式などを用いて数量の関係の比べ方を考察し、日常生活に生かす"}
+      ]}
+    ]},
+    {"id": "math-g6-D", "code": "8250263400000000", "no": "D", "kind": "section", "title": "データの活用", "children": [
+      {"id": "math-g6-D-1", "code": "8250263410000000", "no": "(1)", "kind": "section", "title": "データの収集とその分析", "children": [
+        {"id": "math-g6-D-1-a-a", "code": "8250263411100000", "no": "ア(ア)", "kind": "item", "category": "knowledge", "text": "代表値の意味や求め方を理解する", "keywords": ["代表値"]},
+        {"id": "math-g6-D-1-a-i", "code": "8250263411200000", "no": "ア(イ)", "kind": "item", "category": "knowledge", "text": "度数分布を表す表やグラフの特徴と用い方を理解する", "keywords": ["度数分布"]},
+        {"id": "math-g6-D-1-a-u", "code": "8250263411300000", "no": "ア(ウ)", "kind": "item", "category": "knowledge", "text": "目的に応じてデータを収集したり適切な手法を選択したりするなど、統計的な問題解決の方法を知る", "keywords": ["統計的な問題解決"]},
+        {"id": "math-g6-D-1-i-a", "code": "8250263412100000", "no": "イ(ア)", "kind": "item", "category": "thinking", "text": "目的に応じてデータを集めて分類整理し、データの特徴や傾向に着目する。代表値などを用いて問題の結論について判断し、その妥当性を批判的に考察する"}
+      ]},
+      {"id": "math-g6-D-2", "code": "8250263420000000", "no": "(2)", "kind": "section", "title": "起こり得る場合", "children": [
+        {"id": "math-g6-D-2-a-a", "code": "8250263421100000", "no": "ア(ア)", "kind": "item", "category": "knowledge", "text": "起こり得る場合を順序よく整理するための図や表などの用い方を知る", "keywords": ["起こり得る場合"]},
+        {"id": "math-g6-D-2-i-a", "code": "8250263422100000", "no": "イ(ア)", "kind": "item", "category": "thinking", "text": "事象の特徴に着目し、順序よく整理する観点を決めて、落ちや重なりなく調べる方法を考察する"}
+      ]}
+    ]},
+    {"id": "math-g6-activity", "code": "8250263500000000", "no": "", "kind": "section", "title": "数学的活動", "children": [
+      {"id": "math-g6-activity-1-a", "code": "8250263511000000", "no": "(1)ア", "kind": "activity", "text": "日常の事象を数理的に捉え、問題を見いだして解決する。解決過程を振り返り、結果や方法を改善したり、日常生活などに生かしたりする活動"},
+      {"id": "math-g6-activity-1-i", "code": "8250263512000000", "no": "(1)イ", "kind": "activity", "text": "算数の学習場面から算数の問題を見いだして解決し、解決過程を振り返り、統合的、発展的に考察する活動"},
+      {"id": "math-g6-activity-1-u", "code": "8250263513000000", "no": "(1)ウ", "kind": "activity", "text": "問題解決の過程や結果を、目的に応じて図や式などを用いて数学的に表現し伝え合う活動"}
+    ]},
+    {"id": "math-g6-terms", "code": "8250263600000000", "no": "", "kind": "section", "title": "用語・記号", "children": [
+      {"id": "math-g6-terms-1", "code": "8250263601000000", "no": "", "kind": "term", "text": "線対称"},
+      {"id": "math-g6-terms-2", "code": "8250263602000000", "no": "", "kind": "term", "text": "点対称"},
+      {"id": "math-g6-terms-3", "code": "8250263603000000", "no": "", "kind": "term", "text": "対称の軸"},
+      {"id": "math-g6-terms-4", "code": "8250263604000000", "no": "", "kind": "term", "text": "対称の中心"},
+      {"id": "math-g6-terms-5", "code": "8250263605000000", "no": "", "kind": "term", "text": "比の値"},
+      {"id": "math-g6-terms-6", "code": "8250263606000000", "no": "", "kind": "term", "text": "ドットプロット"},
+      {"id": "math-g6-terms-7", "code": "8250263607000000", "no": "", "kind": "term", "text": "平均値"},
+      {"id": "math-g6-terms-8", "code": "8250263608000000", "no": "", "kind": "term", "text": "中央値"},
+      {"id": "math-g6-terms-9", "code": "8250263609000000", "no": "", "kind": "term", "text": "最頻値"},
+      {"id": "math-g6-terms-10", "code": "8250263610000000", "no": "", "kind": "term", "text": "階級"},
+      {"id": "math-g6-terms-11", "code": "8250263611000000", "no": "", "kind": "term", "text": "："}
+    ]}
+  ],
+  "handling": [
+    {"id": "math-g6-handling-1", "code": "8250265100000000", "no": "(1)", "kind": "handling", "text": "逆数を用いて除法を乗法の計算としてみることや、整数や小数の乗法や除法を分数の場合の計算にまとめることも取り扱う", "keywords": ["逆数"], "refs": ["math-g6-A-1"]},
+    {"id": "math-g6-handling-2", "code": "8250265200000000", "no": "(2)", "kind": "handling", "text": "第3学年から第6学年までに示す小数や分数の計算の能力を定着させ、それらを用いる能力を伸ばすことに配慮する", "refs": ["math-g6-A-1"]},
+    {"id": "math-g6-handling-3", "code": "8250265300000000", "no": "(3)", "kind": "handling", "text": "円周率は 3.14 を用いる", "keywords": ["3.14"], "refs": ["math-g6-B-3-a-a"]}
+  ]
+}

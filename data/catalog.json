@@ -12,6 +12,14 @@
       {"id": "social-studies-g4", "grades": [4], "name": "第4学年", "path": "social-studies/grade-4.json"},
       {"id": "social-studies-g5", "grades": [5], "name": "第5学年", "path": "social-studies/grade-5.json"},
       {"id": "social-studies-g6", "grades": [6], "name": "第6学年", "path": "social-studies/grade-6.json"}
+    ]},
+    {"id": "math", "name": "算数", "path": "math/subject.json", "pages": [
+      {"id": "math-g1", "grades": [1], "name": "第1学年", "path": "math/grade-1.json"},
+      {"id": "math-g2", "grades": [2], "name": "第2学年", "path": "math/grade-2.json"},
+      {"id": "math-g3", "grades": [3], "name": "第3学年", "path": "math/grade-3.json"},
+      {"id": "math-g4", "grades": [4], "name": "第4学年", "path": "math/grade-4.json"},
+      {"id": "math-g5", "grades": [5], "name": "第5学年", "path": "math/grade-5.json"},
+      {"id": "math-g6", "grades": [6], "name": "第6学年", "path": "math/grade-6.json"}
     ]}
   ]
 }
