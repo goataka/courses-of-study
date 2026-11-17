@@ -20,6 +20,12 @@
       {"id": "math-g4", "grades": [4], "name": "第4学年", "path": "math/grade-4.json"},
       {"id": "math-g5", "grades": [5], "name": "第5学年", "path": "math/grade-5.json"},
       {"id": "math-g6", "grades": [6], "name": "第6学年", "path": "math/grade-6.json"}
+    ]},
+    {"id": "science", "name": "理科", "path": "science/subject.json", "pages": [
+      {"id": "science-g3", "grades": [3], "name": "第3学年", "path": "science/grade-3.json"},
+      {"id": "science-g4", "grades": [4], "name": "第4学年", "path": "science/grade-4.json"},
+      {"id": "science-g5", "grades": [5], "name": "第5学年", "path": "science/grade-5.json"},
+      {"id": "science-g6", "grades": [6], "name": "第6学年", "path": "science/grade-6.json"}
     ]}
   ]
 }

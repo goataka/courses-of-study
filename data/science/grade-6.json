@@ -1,0 +1,91 @@
+{
+  "id": "science-g6",
+  "subject": "science",
+  "grades": [6],
+  "name": "第6学年",
+  "code": "8260260000000000",
+  "goals": [
+    {"id": "science-g6-goal-1", "code": "8260262100000000", "no": "(1)", "kind": "goal", "title": "物質・エネルギー", "children": [
+      {"id": "science-g6-goal-1-1", "code": "8260262110000000", "no": "①", "kind": "goal", "category": "knowledge", "text": "燃焼の仕組み、水溶液の性質、てこの規則性、電気の性質や働きについての理解を図る。観察、実験などに関する基本的な技能を身に付ける"},
+      {"id": "science-g6-goal-1-2", "code": "8260262120000000", "no": "②", "kind": "goal", "category": "thinking", "text": "燃焼の仕組み、水溶液の性質、てこの規則性、電気の性質や働きについて追究する中で、主にそれらの仕組みや性質、規則性、働きについて、より妥当な考えをつくりだす力を養う", "keywords": ["より妥当な考えをつくりだす力"]},
+      {"id": "science-g6-goal-1-3", "code": "8260262130000000", "no": "③", "kind": "goal", "category": "attitude", "text": "燃焼の仕組み、水溶液の性質、てこの規則性、電気の性質や働きについて追究する中で、主体的に問題解決しようとする態度を養う"}
+    ]},
+    {"id": "science-g6-goal-2", "code": "8260262200000000", "no": "(2)", "kind": "goal", "title": "生命・地球", "children": [
+      {"id": "science-g6-goal-2-1", "code": "8260262210000000", "no": "①", "kind": "goal", "category": "knowledge", "text": "生物の体のつくりと働き、生物と環境との関わり、土地のつくりと変化、月の形の見え方と太陽との位置関係についての理解を図る。観察、実験などに関する基本的な技能を身に付ける"},
+      {"id": "science-g6-goal-2-2", "code": "8260262220000000", "no": "②", "kind": "goal", "category": "thinking", "text": "生物の体のつくりと働き、生物と環境との関わり、土地のつくりと変化、月の形の見え方と太陽との位置関係について追究する中で、主にそれらの働きや関わり、変化、関係について、より妥当な考えをつくりだす力を養う", "keywords": ["より妥当な考えをつくりだす力"]},
+      {"id": "science-g6-goal-2-3", "code": "8260262230000000", "no": "③", "kind": "goal", "category": "attitude", "text": "生物の体のつくりと働き、生物と環境との関わり、土地のつくりと変化、月の形の見え方と太陽との位置関係について追究する中で、生命を尊重する態度や、主体的に問題解決しようとする態度を養う"}
+    ]}
+  ],
+  "contents": [
+    {"id": "science-g6-A", "code": "8260263100000000", "no": "A", "kind": "section", "title": "物質・エネルギー", "children": [
+      {"id": "science-g6-A-1", "code": "8260263110000000", "no": "(1)", "kind": "section", "title": "燃焼の仕組み", "text": "燃焼の仕組みについて、空気の変化に着目して、物の燃え方を多面的に調べる", "children": [
+        {"id": "science-g6-A-1-a-a", "code": "8260263111100000", "no": "ア(ア)", "kind": "item", "category": "knowledge", "text": "植物体が燃えるときには、空気中の酸素が使われて二酸化炭素ができる", "keywords": ["酸素", "二酸化炭素"]},
+        {"id": "science-g6-A-1-i", "code": "8260263112000000", "no": "イ", "kind": "item", "category": "thinking", "text": "燃焼の仕組みを追究する中で、物が燃えたときの空気の変化について、より妥当な考えをつくりだし、表現する"}
+      ]},
+      {"id": "science-g6-A-2", "code": "8260263120000000", "no": "(2)", "kind": "section", "title": "水溶液の性質", "text": "水溶液について、溶けている物に着目して、それらによる水溶液の性質や働きの違いを多面的に調べる", "children": [
+        {"id": "science-g6-A-2-a-a", "code": "8260263121100000", "no": "ア(ア)", "kind": "item", "category": "knowledge", "text": "水溶液には、酸性、アルカリ性、中性のものがある", "keywords": ["酸性、アルカリ性、中性"]},
+        {"id": "science-g6-A-2-a-i", "code": "8260263121200000", "no": "ア(イ)", "kind": "item", "category": "knowledge", "text": "水溶液には、気体が溶けているものがある", "keywords": ["気体"]},
+        {"id": "science-g6-A-2-a-u", "code": "8260263121300000", "no": "ア(ウ)", "kind": "item", "category": "knowledge", "text": "水溶液には、金属を変化させるものがある", "keywords": ["金属"]},
+        {"id": "science-g6-A-2-i", "code": "8260263122000000", "no": "イ", "kind": "item", "category": "thinking", "text": "水溶液の性質や働きを追究する中で、溶けているものによる性質や働きの違いについて、より妥当な考えをつくりだし、表現する"}
+      ]},
+      {"id": "science-g6-A-3", "code": "8260263130000000", "no": "(3)", "kind": "section", "title": "てこの規則性", "text": "てこの規則性について、力を加える位置や力の大きさに着目して、てこの働きを多面的に調べる", "children": [
+        {"id": "science-g6-A-3-a-a", "code": "8260263131100000", "no": "ア(ア)", "kind": "item", "category": "knowledge", "text": "力を加える位置や力の大きさを変えると、てこを傾ける働きが変わる。てこがつり合うときには、それらの間に規則性がある", "keywords": ["てこ"]},
+        {"id": "science-g6-A-3-a-i", "code": "8260263131200000", "no": "ア(イ)", "kind": "item", "category": "knowledge", "text": "身の回りには、てこの規則性を利用した道具がある"},
+        {"id": "science-g6-A-3-i", "code": "8260263132000000", "no": "イ", "kind": "item", "category": "thinking", "text": "てこの規則性を追究する中で、力を加える位置や力の大きさと、てこの働きとの関係について、より妥当な考えをつくりだし、表現する"}
+      ]},
+      {"id": "science-g6-A-4", "code": "8260263140000000", "no": "(4)", "kind": "section", "title": "電気の利用", "text": "発電や蓄電、電気の変換について、電気の量や働きに着目して、それらを多面的に調べる", "children": [
+        {"id": "science-g6-A-4-a-a", "code": "8260263141100000", "no": "ア(ア)", "kind": "item", "category": "knowledge", "text": "電気は、つくりだしたり蓄えたりすることができる", "keywords": ["つくりだしたり蓄えたり"]},
+        {"id": "science-g6-A-4-a-i", "code": "8260263141200000", "no": "ア(イ)", "kind": "item", "category": "knowledge", "text": "電気は、光、音、熱、運動などに変換することができる", "keywords": ["光、音、熱、運動"]},
+        {"id": "science-g6-A-4-a-u", "code": "8260263141300000", "no": "ア(ウ)", "kind": "item", "category": "knowledge", "text": "身の回りには、電気の性質や働きを利用した道具がある"},
+        {"id": "science-g6-A-4-i", "code": "8260263142000000", "no": "イ", "kind": "item", "category": "thinking", "text": "電気の性質や働きを追究する中で、電気の量と働きとの関係、発電や蓄電、電気の変換について、より妥当な考えをつくりだし、表現する"}
+      ]}
+    ]},
+    {"id": "science-g6-B", "code": "8260263200000000", "no": "B", "kind": "section", "title": "生命・地球", "children": [
+      {"id": "science-g6-B-1", "code": "8260263210000000", "no": "(1)", "kind": "section", "title": "人の体のつくりと働き", "text": "人や他の動物について、体のつくりと呼吸、消化、排出、循環の働きに着目して、生命を維持する働きを多面的に調べる", "children": [
+        {"id": "science-g6-B-1-a-a", "code": "8260263211100000", "no": "ア(ア)", "kind": "item", "category": "knowledge", "text": "体内に酸素が取り入れられ、体外に二酸化炭素などが出されている", "keywords": ["酸素", "二酸化炭素"]},
+        {"id": "science-g6-B-1-a-i", "code": "8260263211200000", "no": "ア(イ)", "kind": "item", "category": "knowledge", "text": "食べ物は、口、胃、腸などを通る間に消化、吸収され、吸収されなかった物は排出される", "keywords": ["消化、吸収", "排出"]},
+        {"id": "science-g6-B-1-a-u", "code": "8260263211300000", "no": "ア(ウ)", "kind": "item", "category": "knowledge", "text": "血液は、心臓の働きで体内を巡り、養分、酸素、二酸化炭素などを運んでいる", "keywords": ["血液", "心臓"]},
+        {"id": "science-g6-B-1-a-e", "code": "8260263211400000", "no": "ア(エ)", "kind": "item", "category": "knowledge", "text": "体内には、生命活動を維持するための様々な臓器がある", "keywords": ["臓器"]},
+        {"id": "science-g6-B-1-i", "code": "8260263212000000", "no": "イ", "kind": "item", "category": "thinking", "text": "人や他の動物の体のつくりと働きを追究する中で、体のつくりと呼吸、消化、排出、循環の働きについて、より妥当な考えをつくりだし、表現する"}
+      ]},
+      {"id": "science-g6-B-2", "code": "8260263220000000", "no": "(2)", "kind": "section", "title": "植物の養分と水の通り道", "text": "植物について、その体のつくり、体内の水などの行方、葉で養分をつくる働きに着目して、生命を維持する働きを多面的に調べる", "children": [
+        {"id": "science-g6-B-2-a-a", "code": "8260263221100000", "no": "ア(ア)", "kind": "item", "category": "knowledge", "text": "植物の葉に日光が当たるとでんぷんができる", "keywords": ["でんぷん"]},
+        {"id": "science-g6-B-2-a-i", "code": "8260263221200000", "no": "ア(イ)", "kind": "item", "category": "knowledge", "text": "根、茎、葉には水の通り道があり、根から吸い上げられた水は、主に葉から蒸散により排出される", "keywords": ["水の通り道", "蒸散"]},
+        {"id": "science-g6-B-2-i", "code": "8260263222000000", "no": "イ", "kind": "item", "category": "thinking", "text": "植物の体のつくりと働きを追究する中で、体のつくり、体内の水などの行方、葉で養分をつくる働きについて、より妥当な考えをつくりだし、表現する"}
+      ]},
+      {"id": "science-g6-B-3", "code": "8260263230000000", "no": "(3)", "kind": "section", "title": "生物と環境", "text": "生物と環境について、動物や植物の生活を観察したり資料を活用したりする中で、生物と環境との関わりに着目して、それらを多面的に調べる", "children": [
+        {"id": "science-g6-B-3-a-a", "code": "8260263231100000", "no": "ア(ア)", "kind": "item", "category": "knowledge", "text": "生物は、水と空気を通して周囲の環境と関わって生きている", "keywords": ["水と空気"]},
+        {"id": "science-g6-B-3-a-i", "code": "8260263231200000", "no": "ア(イ)", "kind": "item", "category": "knowledge", "text": "生物の間には、食う食われるという関係がある", "keywords": ["食う食われる"]},
+        {"id": "science-g6-B-3-a-u", "code": "8260263231300000", "no": "ア(ウ)", "kind": "item", "category": "knowledge", "text": "人は、環境と関わり、工夫して生活している", "keywords": ["環境"]},
+        {"id": "science-g6-B-3-i", "code": "8260263232000000", "no": "イ", "kind": "item", "category": "thinking", "text": "生物と環境を追究する中で、生物と環境との関わりについて、より妥当な考えをつくりだし、表現する"}
+      ]},
+      {"id": "science-g6-B-4", "code": "8260263240000000", "no": "(4)", "kind": "section", "title": "土地のつくりと変化", "text": "土地のつくりと変化について、土地やその中に含まれる物に着目して、土地のつくりやでき方を多面的に調べる", "children": [
+        {"id": "science-g6-B-4-a-a", "code": "8260263241100000", "no": "ア(ア)", "kind": "item", "category": "knowledge", "text": "土地は、礫、砂、泥、火山灰などからできており、層をつくって広がっているものがある。層には化石が含まれているものがある", "keywords": ["礫、砂、泥、火山灰", "化石"]},
+        {"id": "science-g6-B-4-a-i", "code": "8260263241200000", "no": "ア(イ)", "kind": "item", "category": "knowledge", "text": "地層は、流れる水の働きや火山の噴火によってできる", "keywords": ["地層"]},
+        {"id": "science-g6-B-4-a-u", "code": "8260263241300000", "no": "ア(ウ)", "kind": "item", "category": "knowledge", "text": "土地は、火山の噴火や地震によって変化する", "keywords": ["火山の噴火や地震"]},
+        {"id": "science-g6-B-4-i", "code": "8260263242000000", "no": "イ", "kind": "item", "category": "thinking", "text": "土地のつくりと変化を追究する中で、土地のつくりやでき方について、より妥当な考えをつくりだし、表現する"}
+      ]},
+      {"id": "science-g6-B-5", "code": "8260263250000000", "no": "(5)", "kind": "section", "title": "月と太陽", "text": "月の形の見え方について、月と太陽の位置に着目して、それらの位置関係を多面的に調べる", "children": [
+        {"id": "science-g6-B-5-a-a", "code": "8260263251100000", "no": "ア(ア)", "kind": "item", "category": "knowledge", "text": "月の輝いている側に太陽がある。月の形の見え方は、太陽と月との位置関係によって変わる", "keywords": ["月", "太陽"]},
+        {"id": "science-g6-B-5-i", "code": "8260263252000000", "no": "イ", "kind": "item", "category": "thinking", "text": "月の形の見え方を追究する中で、月の位置や形と太陽の位置との関係について、より妥当な考えをつくりだし、表現する"}
+      ]}
+    ]}
+  ],
+  "handling": [
+    {"id": "science-g6-handling-1", "code": "8260265100000000", "no": "(1)", "kind": "handling", "text": "2種類以上のものづくりを行う", "keywords": ["2種類以上のものづくり"], "refs": ["science-g6-A"]},
+    {"id": "science-g6-handling-2", "code": "8260265200000000", "no": "(2)", "kind": "handling", "text": "電気をつくりだす道具として、手回し発電機、光電池などを扱う", "keywords": ["手回し発電機、光電池"], "refs": ["science-g6-A-4-a-a"]},
+    {"id": "science-g6-handling-3", "code": "8260265300000000", "no": "(3)", "kind": "handling", "refs": ["science-g6-B-1"], "children": [
+      {"id": "science-g6-handling-3-a", "code": "8260265310000000", "no": "ア", "kind": "handling", "text": "心臓の拍動と脈拍とが関係することにも触れる", "keywords": ["拍動と脈拍"], "refs": ["science-g6-B-1-a-u"]},
+      {"id": "science-g6-handling-3-i", "code": "8260265320000000", "no": "イ", "kind": "handling", "text": "主な臓器として、肺、胃、小腸、大腸、肝臓、腎臓、心臓を扱う", "keywords": ["肺、胃、小腸、大腸、肝臓、腎臓、心臓"], "refs": ["science-g6-B-1-a-e"]}
+    ]},
+    {"id": "science-g6-handling-4", "code": "8260265400000000", "no": "(4)", "kind": "handling", "refs": ["science-g6-B-3"], "children": [
+      {"id": "science-g6-handling-4-a", "code": "8260265410000000", "no": "ア", "kind": "handling", "text": "水が循環していることにも触れる", "keywords": ["循環"], "refs": ["science-g6-B-3-a-a"]},
+      {"id": "science-g6-handling-4-i", "code": "8260265420000000", "no": "イ", "kind": "handling", "text": "水中の小さな生物を観察し、それらが魚などの食べ物になっていることに触れる", "keywords": ["水中の小さな生物"], "refs": ["science-g6-B-3-a-i"]}
+    ]},
+    {"id": "science-g6-handling-5", "code": "8260265500000000", "no": "(5)", "kind": "handling", "refs": ["science-g6-B-4"], "children": [
+      {"id": "science-g6-handling-5-a", "code": "8260265510000000", "no": "ア", "kind": "handling", "text": "流れる水の働きでできた岩石として、礫岩、砂岩、泥岩を扱う", "keywords": ["礫岩、砂岩、泥岩"], "refs": ["science-g6-B-4-a-i"]},
+      {"id": "science-g6-handling-5-i", "code": "8260265520000000", "no": "イ", "kind": "handling", "text": "自然災害についても触れる", "keywords": ["自然災害"], "refs": ["science-g6-B-4-a-u"]}
+    ]},
+    {"id": "science-g6-handling-6", "code": "8260265600000000", "no": "(6)", "kind": "handling", "text": "地球から見た太陽と月との位置関係で扱う", "refs": ["science-g6-B-5-a-a"]}
+  ]
+}
