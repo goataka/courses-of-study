@@ -4,12 +4,12 @@ import { test } from 'node:test';
 import { findBrokenLinks, headingAnchors, type MarkdownFile } from './links.ts';
 
 const INDEX: MarkdownFile = {
-  path: 'docs/math/README.md',
+  path: 'docs/elementary/math/README.md',
   content:
-    '# 算数\n\n## 目次\n\n- [第1学年](grade-1.md)\n- [目標](grade-1.md#目標)\n- [トップ](../../README.md)\n',
+    '# 算数\n\n## 目次\n\n- [第1学年](grade-1.md)\n- [目標](grade-1.md#目標)\n- [トップ](../../../README.md)\n',
 };
 const PAGE: MarkdownFile = {
-  path: 'docs/math/grade-1.md',
+  path: 'docs/elementary/math/grade-1.md',
   content: '# 第1学年\n\n## 目標\n\n## 内容\n',
 };
 const EXISTING = new Set(['README.md', INDEX.path, PAGE.path]);

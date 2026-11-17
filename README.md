@@ -27,14 +27,18 @@
 
 ## 教科一覧
 
-- **[国語](docs/japanese/README.md)**
-- **[社会](docs/social-studies/README.md)**
-- **[算数](docs/math/README.md)**
-- **[理科](docs/science/README.md)**
+小学校の教科は次のとおり。
+
+- **[国語](docs/elementary/japanese/README.md)**
+- **[社会](docs/elementary/social-studies/README.md)**
+- **[算数](docs/elementary/math/README.md)**
+- **[理科](docs/elementary/science/README.md)**
 
 ## 構成
 
-- **docs**：教科ごとのページ
+- **docs**：段階ごとのページ
+  - **[小学校](docs/elementary/README.md)**：第1学年から第6学年
+  - **中学校**：`docs/lower-secondary/` に追加する（未収録）
   - [記載形式](docs/format.md)：書き方と ID の決まり
 - **tools**：Markdown を検査するツール
 - **[Agent.md](Agent.md)**：エージェント向けの指示

@@ -7,7 +7,7 @@ import { findBrokenLinks } from './links.ts';
 import { listFiles, readFile } from './repository.ts';
 
 const ROOT = new URL('..', import.meta.url).pathname;
-const KANJI_PAGE = 'docs/japanese/kanji.md';
+const KANJI_PAGE = 'docs/elementary/japanese/kanji.md';
 const MARKDOWN_EXTENSION = '.md';
 
 const paths = listFiles(ROOT);
