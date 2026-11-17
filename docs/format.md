@@ -112,7 +112,7 @@
 - **分野別ページのID**：`jh-<教科ID>-<分野>`
   - 例：`jh-social-studies-geography`、`jh-science-field1`
 - **言語別ページのID**：`<教科ID>-<言語>`
-  - 例：`foreign-language-english`
+  - 例：`foreign-language-english`、`jh-foreign-language-english`
 - **段階**：中学校の ID は、先頭に `jh-` を付ける
   - 例：`jh-math-g1-A-1` は中学校 数学 第1学年 A(1)
   - 小学校：先頭に何も付けない
