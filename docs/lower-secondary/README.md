@@ -13,3 +13,4 @@
 
 - **[国語](japanese/README.md)**
 - **[社会](social-studies/README.md)**
+- **[数学](math/README.md)**
