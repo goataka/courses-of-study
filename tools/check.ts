@@ -12,6 +12,7 @@ const KANJI_PAGE = 'docs/elementary/japanese/kanji.md';
 const MARKDOWN_EXTENSION = '.md';
 const ONKUN_DIRECTORY = 'docs/reference/onkun/';
 const ONKUN_TABLE = /^table-\d+\.md$/;
+const ONKUN_GRADE = /^grade-(\d)\.md$/;
 
 const paths = listFiles(ROOT);
 const files = paths
@@ -25,6 +26,14 @@ const onkunPages = files
       ONKUN_TABLE.test(file.path.slice(ONKUN_DIRECTORY.length)),
   )
   .map(parseOnkunPage);
+const onkunGrades = new Map(
+  files.flatMap((file) => {
+    const grade = file.path.startsWith(ONKUN_DIRECTORY)
+      ? ONKUN_GRADE.exec(file.path.slice(ONKUN_DIRECTORY.length))?.[1]
+      : undefined;
+    return grade ? [[Number(grade), parseOnkunPage(file)] as const] : [];
+  }),
+);
 const onkunReadme = files.find(
   (file) => file.path === `${ONKUN_DIRECTORY}README.md`,
 );
@@ -39,10 +48,14 @@ const problems = [
       )
     : [`${KANJI_PAGE}: ファイルがない`]),
   ...onkunPages.flatMap((page) => page.problems),
+  ...[...onkunGrades.values()].flatMap((page) => page.problems),
   ...(kanji && onkunReadme
     ? checkOnkun(
         onkunReadme,
         onkunPages.flatMap((page) => page.kanji),
+        new Map(
+          [...onkunGrades].map(([grade, page]) => [grade, page.kanji] as const),
+        ),
         parseKanjiTable(kanji.content),
       ).map((problem) => `${ONKUN_DIRECTORY}: ${problem}`)
     : [`${ONKUN_DIRECTORY}README.md: ファイルがない`]),

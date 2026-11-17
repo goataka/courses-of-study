@@ -1,19 +1,66 @@
-/** 音訓の割り振りのページを読み取り、字数と、学年別漢字配当表との一致を検査する。 */
+/** 音訓の割り振りの表を読み取り、字数、配当学年、学年別ページとの一致を検査する。 */
 
 import type { KanjiTable } from './kanji.ts';
 import type { MarkdownFile } from './links.ts';
 
-const KANJI_LINE = /^- \*\*(\S+?)\*\*(?: 第(\d)学年( 改)?)?：(.+)$/;
+const HEADER = '| 漢字 | 学年 | 小学校 | 中学校 | 高等学校 |';
+const STAGES = ['小学校', '中学校', '高等学校'] as const;
+const GRADE = /^(?:([1-6])(\(改\))?)?$/;
 const READING =
-  /^[\p{Script=Hiragana}\p{Script=Katakana}ー]+ [小中高]( 特)?( 改)?$/u;
+  /^[\p{Script=Hiragana}\p{Script=Katakana}ー]+(\(特\))?(\(改\))?$/u;
 const COUNT_LINE = /^- \*\*字数\*\*：(\d+)字$/m;
 const TOTAL_LINE = /^- \*\*漢字\*\*：(\d+)字$/m;
 const READING_TOTAL_LINE = /^- \*\*音訓\*\*：(\d+)$/m;
+const CELL_SEPARATOR = '|';
+const READING_SEPARATOR = '、';
 
 export interface OnkunKanji {
   readonly kanji: string;
   readonly grade: number | undefined;
-  readonly readings: string[];
+  /** 行の内容をそのまま比べるための文字列 */
+  readonly row: string;
+  readonly readings: { stage: string; reading: string }[];
+}
+
+function cellsOf(line: string): string[] {
+  return line
+    .split(CELL_SEPARATOR)
+    .slice(1, -1)
+    .map((cell) => cell.trim());
+}
+
+function parseRow(
+  path: string,
+  line: string,
+): { item?: OnkunKanji; problems: string[] } {
+  const [kanji = '', grade = '', ...stages] = cellsOf(line);
+  const gradeMatch = GRADE.exec(grade);
+  if ([...kanji].length !== 1 || !gradeMatch || stages.length !== 3) {
+    return { problems: [`${path}: 表の行の形が正しくない：${line}`] };
+  }
+  const readings = stages.flatMap((cell, index) =>
+    cell === ''
+      ? []
+      : cell
+          .split(READING_SEPARATOR)
+          .map((reading) => ({ stage: STAGES[index] ?? '', reading })),
+  );
+  const problems = readings
+    .filter(({ reading }) => !READING.test(reading))
+    .map(({ reading }) => `${path}: 音訓の形が正しくない：${reading}`);
+  if (readings.length === 0) {
+    problems.push(`${path}: 音訓がない：${kanji}`);
+  }
+  const value = gradeMatch[1];
+  return {
+    item: {
+      kanji,
+      grade: value ? Number(value) : undefined,
+      row: line,
+      readings,
+    },
+    problems,
+  };
 }
 
 /** 表のページから、漢字の行を読み取る。読み取れない行は問題として返す。 */
@@ -21,41 +68,35 @@ export function parseOnkunPage(file: MarkdownFile): {
   kanji: OnkunKanji[];
   problems: string[];
 } {
+  const lines = file.content.split('\n');
+  const start = lines.indexOf(HEADER);
+  if (start < 0) {
+    return { kanji: [], problems: [`${file.path}: 表の見出し行がない`] };
+  }
   const kanji: OnkunKanji[] = [];
   const problems: string[] = [];
-  for (const line of file.content.split('\n')) {
-    if (!line.startsWith('- **') || line.startsWith('- **[')) {
-      continue;
+  for (const line of lines.slice(start + 2)) {
+    if (!line.startsWith(CELL_SEPARATOR)) {
+      break;
     }
-    const match = KANJI_LINE.exec(line);
-    if (!match || [...(match[1] ?? '')].length !== 1) {
-      continue;
+    const parsed = parseRow(file.path, line);
+    problems.push(...parsed.problems);
+    if (parsed.item) {
+      kanji.push(parsed.item);
     }
-    const readings = (match[4] ?? '').split('、');
-    const bad = readings.filter((reading) => !READING.test(reading));
-    problems.push(
-      ...bad.map((reading) => `${file.path}: 音訓の形が正しくない：${reading}`),
-    );
-    kanji.push({
-      kanji: match[1] ?? '',
-      grade: match[2] ? Number(match[2]) : undefined,
-      readings,
-    });
   }
   const count = COUNT_LINE.exec(file.content)?.[1];
   if (count !== undefined && Number(count) !== kanji.length) {
     problems.push(
-      `${file.path}: 字数が${count}字で、漢字の行の${kanji.length}字と一致しない`,
+      `${file.path}: 字数が${count}字で、表の${kanji.length}字と一致しない`,
     );
   }
   return { kanji, problems };
 }
 
-/** 全ページの合計、重複、配当学年の一致を確かめる。 */
-export function checkOnkun(
+function checkTotals(
   readme: MarkdownFile,
   kanji: readonly OnkunKanji[],
-  table: KanjiTable,
 ): string[] {
   const problems: string[] = [];
   const total = TOTAL_LINE.exec(readme.content)?.[1];
@@ -71,20 +112,21 @@ export function checkOnkun(
       `音訓が${String(readingTotal)}で、表の${readings}と一致しない`,
     );
   }
-  const seen = new Set<string>();
-  for (const item of kanji) {
-    if (seen.has(item.kanji)) {
-      problems.push(`漢字が重複している：${item.kanji}`);
-    }
-    seen.add(item.kanji);
-  }
+  return problems;
+}
+
+function checkGrades(
+  rows: ReadonlyMap<string, OnkunKanji>,
+  table: KanjiTable,
+): string[] {
+  const problems: string[] = [];
   const grades = new Map<string, number>();
   for (const grade of table.grades) {
     for (const character of grade.characters) {
       grades.set(character, grade.grade);
     }
   }
-  for (const item of kanji) {
+  for (const item of rows.values()) {
     if (item.grade !== grades.get(item.kanji)) {
       problems.push(
         `${item.kanji}の学年が${String(item.grade)}で、配当表の${String(grades.get(item.kanji))}と一致しない`,
@@ -92,9 +134,58 @@ export function checkOnkun(
     }
   }
   for (const character of grades.keys()) {
-    if (!seen.has(character)) {
+    if (!rows.has(character)) {
       problems.push(`配当表の漢字が表にない：${character}`);
     }
   }
   return problems;
+}
+
+/** 学年別ページが、配当表の並びどおりで、表のページと同じ行であることを確かめる。 */
+function checkGradePages(
+  rows: ReadonlyMap<string, OnkunKanji>,
+  gradePages: ReadonlyMap<number, readonly OnkunKanji[]>,
+  table: KanjiTable,
+): string[] {
+  return table.grades.flatMap((grade) => {
+    const page = gradePages.get(grade.grade);
+    if (!page) {
+      return [`第${grade.grade}学年のページがない`];
+    }
+    const order = page.map((item) => item.kanji).join('');
+    const problems =
+      order === grade.characters.join('')
+        ? []
+        : [`第${grade.grade}学年のページの漢字が、配当表の並びと一致しない`];
+    return problems.concat(
+      page
+        .filter((item) => rows.get(item.kanji)?.row !== item.row)
+        .map(
+          (item) =>
+            `第${grade.grade}学年のページの${item.kanji}が、表のページと一致しない`,
+        ),
+    );
+  });
+}
+
+/** 全ページの合計、重複、配当学年、学年別ページの一致を確かめる。 */
+export function checkOnkun(
+  readme: MarkdownFile,
+  kanji: readonly OnkunKanji[],
+  gradePages: ReadonlyMap<number, readonly OnkunKanji[]>,
+  table: KanjiTable,
+): string[] {
+  const problems = checkTotals(readme, kanji);
+  const rows = new Map<string, OnkunKanji>();
+  for (const item of kanji) {
+    if (rows.has(item.kanji)) {
+      problems.push(`漢字が重複している：${item.kanji}`);
+    }
+    rows.set(item.kanji, item);
+  }
+  return [
+    ...problems,
+    ...checkGrades(rows, table),
+    ...checkGradePages(rows, gradePages, table),
+  ];
 }
