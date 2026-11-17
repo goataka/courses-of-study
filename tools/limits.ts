@@ -1,8 +1,8 @@
 /** ファイルを小さく保つための上限。エージェントや人が一度に読みやすい大きさにする。 */
 
-import type { OutputFile } from './outputs.ts';
+import type { MarkdownFile } from './links.ts';
 
-/** データと Markdown の1ファイルあたりの行数の上限。 */
+/** Markdown の1ファイルあたりの行数の上限。 */
 export const MAX_FILE_LINES = 300;
 
 const LINE_BREAK = '\n';
@@ -16,7 +16,7 @@ export function countLines(content: string): number {
 
 /** 上限を超えたファイルを、場所と内容の文字列で返す。 */
 export function findOversizedFiles(
-  files: readonly OutputFile[],
+  files: readonly MarkdownFile[],
   maxLines: number = MAX_FILE_LINES,
 ): string[] {
   return files

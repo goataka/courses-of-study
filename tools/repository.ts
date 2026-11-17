@@ -1,9 +1,9 @@
-/** リポジトリ内のファイルの読み書き。 */
+/** リポジトリ内のファイルの読み込み。 */
 
-import { mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
-import { dirname, join } from 'node:path';
+import { readdirSync, readFileSync } from 'node:fs';
+import { join } from 'node:path';
 
-import type { OutputFile } from './outputs.ts';
+import type { MarkdownFile } from './links.ts';
 
 const IGNORED_DIRECTORIES: ReadonlySet<string> = new Set([
   '.git',
@@ -26,12 +26,6 @@ export function listFiles(root: string, directory = ''): string[] {
   });
 }
 
-export function readFile(root: string, path: string): OutputFile {
+export function readFile(root: string, path: string): MarkdownFile {
   return { path, content: readFileSync(join(root, path), 'utf8') };
-}
-
-export function writeFile(root: string, file: OutputFile): void {
-  const target = join(root, file.path);
-  mkdirSync(dirname(target), { recursive: true });
-  writeFileSync(target, file.content);
 }

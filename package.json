@@ -1,16 +1,15 @@
 {
   "name": "courses-of-study",
   "private": true,
-  "description": "小学校学習指導要領の学習内容データと、その閲覧用ドキュメント",
+  "description": "小学校学習指導要領の学習内容を Markdown で整理したもの",
   "type": "module",
   "packageManager": "pnpm@12.18.0",
   "engines": {
     "node": ">=22.18"
   },
   "scripts": {
-    "build": "node tools/build.ts",
-    "check": "pnpm run typecheck && pnpm run test && pnpm run check:generated",
-    "check:generated": "node tools/build.ts --check",
+    "check": "pnpm run typecheck && pnpm run test && pnpm run check:docs",
+    "check:docs": "node tools/check.ts",
     "test": "node --test \"tools/**/*.test.ts\"",
     "typecheck": "tsc"
   },

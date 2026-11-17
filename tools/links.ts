@@ -8,6 +8,7 @@ const LINK_PATTERN = /\]\(([^)\s]+)\)/g;
 const HEADING_PATTERN = /^#+ (.+)$/gm;
 const EXTERNAL_LINK_PATTERN = /^[a-z][a-z0-9+.-]*:/i;
 const ANCHOR_SEPARATOR = '#';
+const INLINE_CODE_PATTERN = /`[^`\n]*`/g;
 
 export interface MarkdownFile {
   /** リポジトリ直下からのパス。 */
@@ -28,8 +29,10 @@ export function headingAnchors(content: string): Set<string> {
   return anchors;
 }
 
+/** インラインコードの中のリンクは例として扱い、検査しない。 */
 function linkTargets(content: string): string[] {
-  return [...content.matchAll(LINK_PATTERN)].map((match) => match[1] ?? '');
+  const prose = content.replace(INLINE_CODE_PATTERN, '');
+  return [...prose.matchAll(LINK_PATTERN)].map((match) => match[1] ?? '');
 }
 
 function resolveTarget(fromPath: string, targetPath: string): string {

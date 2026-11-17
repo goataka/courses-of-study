@@ -1,13 +1,11 @@
 # 国語：学年別漢字配当表
 
 - **ID**：`japanese-kanji`
-- **データ**：[data/japanese/kanji.json](../../data/japanese/kanji.json)
 - **コード**：[8210000100000000](https://w3id.org/jp-cos/8210000100000000)
 - **出典**：[小学校学習指導要領 平成29年告示](https://www.mext.go.jp/content/1413522_001.pdf) 第2章 第1節 国語 別表
 - **上位ページ**：[国語](README.md)
 - **総字数**：1026字
 - **並び**：別表の掲載順
-- **生成**：自動生成のため、[データ](../../data/japanese/kanji.json) を編集して再生成する
 
 ## 目次
 
