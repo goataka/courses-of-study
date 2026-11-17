@@ -15,3 +15,4 @@
 - **[社会](social-studies/README.md)**
 - **[算数](math/README.md)**
 - **[理科](science/README.md)**
+- **[外国語](foreign-language/README.md)**：英語、第5学年及び第6学年
