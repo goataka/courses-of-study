@@ -1,0 +1,5 @@
+{
+  "schemaVersion": 1,
+  "source": {"title": "小学校学習指導要領 平成29年告示", "notice": "平成29年文部科学省告示第63号", "url": "https://www.mext.go.jp/content/1413522_001.pdf", "codeTable": "小学校学習指導要領コード 平成29年告示 バージョン1.1", "codeTableUrl": "https://www.mext.go.jp/a_menu/other/data_00002.htm", "codeBaseUrl": "https://w3id.org/jp-cos/"},
+  "subjects": []
+}
