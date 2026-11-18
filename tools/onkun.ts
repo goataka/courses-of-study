@@ -1,12 +1,12 @@
-/** 音訓の割り振りの表を読み取り、字数、配当学年、学年別ページとの一致を検査する。 */
+/** 音訓の割り振りのページを読み取り、字数、配当学年、段階ごとの件数を検査する。 */
 
 import type { KanjiTable } from './kanji.ts';
 import type { MarkdownFile } from './links.ts';
 
-const HEADER = '| 漢字 | 学年 | 小学校 | 中学校 | 高等学校 |';
-/** 学年別ページは学年の列を持たない */
-const GRADE_PAGE_HEADER = '| 漢字 | 小学校 | 中学校 | 高等学校 |';
-const STAGES = ['小学校', '中学校', '高等学校'] as const;
+/** 小学校の学年別ページの表 */
+const GRADE_PAGE_HEADER = '| 漢字 | 音訓 |';
+/** 中学校、高等学校のページの表 */
+const STAGE_PAGE_HEADER = '| 漢字 | 配当学年 | 音訓 |';
 const GRADE = /^(?:([1-6])(\(改\))?)?$/;
 const READING =
   /^[\p{Script=Hiragana}\p{Script=Katakana}ー]+(\(特\))?(\(改\))?$/u;
@@ -16,12 +16,20 @@ const READING_TOTAL_LINE = /^- \*\*音訓\*\*：(\d+)$/m;
 const CELL_SEPARATOR = '|';
 const READING_SEPARATOR = '、';
 
-export interface OnkunKanji {
+export const STAGES = ['小学校', '中学校', '高等学校'] as const;
+export type Stage = (typeof STAGES)[number];
+
+export interface OnkunRow {
   readonly kanji: string;
+  /** 中学校、高等学校のページの配当学年。学年別ページでは持たない */
   readonly grade: number | undefined;
-  /** 段階と音訓を、ページをまたいで比べるための文字列 */
-  readonly signature: string;
-  readonly readings: { stage: string; reading: string }[];
+  readonly readings: string[];
+}
+
+export interface OnkunPage {
+  readonly kind: 'grade' | 'stage';
+  readonly rows: OnkunRow[];
+  readonly problems: string[];
 }
 
 function cellsOf(line: string): string[] {
@@ -34,165 +42,155 @@ function cellsOf(line: string): string[] {
 function parseRow(
   path: string,
   line: string,
-  withGrade: boolean,
-): { item?: OnkunKanji; problems: string[] } {
+  kind: OnkunPage['kind'],
+): { row?: OnkunRow; problems: string[] } {
   const cells = cellsOf(line);
-  const kanji = cells[0] ?? '';
-  const grade = withGrade ? (cells[1] ?? '') : '';
-  const stages = cells.slice(withGrade ? 2 : 1);
+  const [kanji = '', grade = '', readingCell = ''] =
+    kind === 'stage' ? cells : [cells[0], '', cells[1]];
   const gradeMatch = GRADE.exec(grade);
-  if ([...kanji].length !== 1 || !gradeMatch || stages.length !== 3) {
+  const width = kind === 'stage' ? 3 : 2;
+  if ([...kanji].length !== 1 || !gradeMatch || cells.length !== width) {
     return { problems: [`${path}: 表の行の形が正しくない：${line}`] };
   }
-  const readings = stages.flatMap((cell, index) =>
-    cell === ''
-      ? []
-      : cell
-          .split(READING_SEPARATOR)
-          .map((reading) => ({ stage: STAGES[index] ?? '', reading })),
-  );
+  const readings =
+    readingCell === '' ? [] : readingCell.split(READING_SEPARATOR);
   const problems = readings
-    .filter(({ reading }) => !READING.test(reading))
-    .map(({ reading }) => `${path}: 音訓の形が正しくない：${reading}`);
-  if (readings.length === 0) {
+    .filter((reading) => !READING.test(reading))
+    .map((reading) => `${path}: 音訓の形が正しくない：${reading}`);
+  if (kind === 'stage' && readings.length === 0) {
     problems.push(`${path}: 音訓がない：${kanji}`);
   }
   const value = gradeMatch[1];
   return {
-    item: {
-      kanji,
-      grade: value ? Number(value) : undefined,
-      signature: stages.join(CELL_SEPARATOR),
-      readings,
-    },
+    row: { kanji, grade: value ? Number(value) : undefined, readings },
     problems,
   };
 }
 
-/** 表のページから、漢字の行を読み取る。読み取れない行は問題として返す。 */
-export function parseOnkunPage(file: MarkdownFile): {
-  kanji: OnkunKanji[];
-  problems: string[];
-} {
+/** 表のページから行を読み取る。読み取れない行は問題として返す。 */
+export function parseOnkunPage(file: MarkdownFile): OnkunPage {
   const lines = file.content.split('\n');
-  const withGrade = lines.includes(HEADER);
-  const start = lines.indexOf(withGrade ? HEADER : GRADE_PAGE_HEADER);
+  const kind = lines.includes(STAGE_PAGE_HEADER) ? 'stage' : 'grade';
+  const start = lines.indexOf(
+    kind === 'stage' ? STAGE_PAGE_HEADER : GRADE_PAGE_HEADER,
+  );
   if (start < 0) {
-    return { kanji: [], problems: [`${file.path}: 表の見出し行がない`] };
+    return { kind, rows: [], problems: [`${file.path}: 表の見出し行がない`] };
   }
-  const kanji: OnkunKanji[] = [];
+  const rows: OnkunRow[] = [];
   const problems: string[] = [];
   for (const line of lines.slice(start + 2)) {
     if (!line.startsWith(CELL_SEPARATOR)) {
       break;
     }
-    const parsed = parseRow(file.path, line, withGrade);
+    const parsed = parseRow(file.path, line, kind);
     problems.push(...parsed.problems);
-    if (parsed.item) {
-      kanji.push(parsed.item);
+    if (parsed.row) {
+      rows.push(parsed.row);
     }
   }
   const count = COUNT_LINE.exec(file.content)?.[1];
-  if (count !== undefined && Number(count) !== kanji.length) {
+  if (count !== undefined && Number(count) !== rows.length) {
     problems.push(
-      `${file.path}: 字数が${count}字で、表の${kanji.length}字と一致しない`,
+      `${file.path}: 字数が${count}字で、表の${rows.length}字と一致しない`,
     );
   }
-  return { kanji, problems };
+  return { kind, rows, problems };
 }
 
-function checkTotals(
-  readme: MarkdownFile,
-  kanji: readonly OnkunKanji[],
-): string[] {
+export interface OnkunSet {
+  readonly readme: MarkdownFile;
+  /** 小学校の学年別ページ。キーは学年 */
+  readonly grades: ReadonlyMap<number, readonly OnkunRow[]>;
+  /** 中学校、高等学校のページの行 */
+  readonly stages: ReadonlyMap<Stage, readonly OnkunRow[]>;
+}
+
+function stageCount(readme: MarkdownFile, stage: Stage): number | undefined {
+  const match = new RegExp(`^ {2}- ${stage}：(\\d+)$`, 'm').exec(
+    readme.content,
+  );
+  return match ? Number(match[1]) : undefined;
+}
+
+function checkTotals(set: OnkunSet): string[] {
   const problems: string[] = [];
-  const total = TOTAL_LINE.exec(readme.content)?.[1];
-  if (Number(total) !== kanji.length) {
+  const rowsByStage = new Map<Stage, readonly OnkunRow[]>([
+    ['小学校', [...set.grades.values()].flat()],
+    ...set.stages,
+  ]);
+  let readingTotal = 0;
+  const kanji = new Set<string>();
+  for (const stage of STAGES) {
+    const rows = rowsByStage.get(stage) ?? [];
+    const readings = rows.reduce((sum, row) => sum + row.readings.length, 0);
+    readingTotal += readings;
+    rows.forEach((row) => kanji.add(row.kanji));
+    const expected = stageCount(set.readme, stage);
+    if (expected !== readings) {
+      problems.push(
+        `${stage}の音訓が${String(expected)}で、表の${readings}と一致しない`,
+      );
+    }
+  }
+  const total = TOTAL_LINE.exec(set.readme.content)?.[1];
+  if (Number(total) !== kanji.size) {
     problems.push(
-      `漢字が${String(total)}字で、表の${kanji.length}字と一致しない`,
+      `漢字が${String(total)}字で、表の${kanji.size}字と一致しない`,
     );
   }
-  const readings = kanji.reduce((sum, item) => sum + item.readings.length, 0);
-  const readingTotal = READING_TOTAL_LINE.exec(readme.content)?.[1];
-  if (Number(readingTotal) !== readings) {
+  const expectedReadings = READING_TOTAL_LINE.exec(set.readme.content)?.[1];
+  if (Number(expectedReadings) !== readingTotal) {
     problems.push(
-      `音訓が${String(readingTotal)}で、表の${readings}と一致しない`,
+      `音訓が${String(expectedReadings)}で、表の${readingTotal}と一致しない`,
     );
   }
   return problems;
 }
 
-function checkGrades(
-  rows: ReadonlyMap<string, OnkunKanji>,
-  table: KanjiTable,
-): string[] {
-  const problems: string[] = [];
+function checkGradePages(set: OnkunSet, table: KanjiTable): string[] {
+  return table.grades.flatMap((grade) => {
+    const rows = set.grades.get(grade.grade);
+    if (!rows) {
+      return [`第${grade.grade}学年のページがない`];
+    }
+    const order = rows.map((row) => row.kanji).join('');
+    return order === grade.characters.join('')
+      ? []
+      : [`第${grade.grade}学年のページの漢字が、配当表の並びと一致しない`];
+  });
+}
+
+function checkStagePages(set: OnkunSet, table: KanjiTable): string[] {
   const grades = new Map<string, number>();
   for (const grade of table.grades) {
     for (const character of grade.characters) {
       grades.set(character, grade.grade);
     }
   }
-  for (const item of rows.values()) {
-    if (item.grade !== grades.get(item.kanji)) {
-      problems.push(
-        `${item.kanji}の学年が${String(item.grade)}で、配当表の${String(grades.get(item.kanji))}と一致しない`,
-      );
-    }
-  }
-  for (const character of grades.keys()) {
-    if (!rows.has(character)) {
-      problems.push(`配当表の漢字が表にない：${character}`);
+  const problems: string[] = [];
+  for (const [stage, rows] of set.stages) {
+    const seen = new Set<string>();
+    for (const row of rows) {
+      if (seen.has(row.kanji)) {
+        problems.push(`${stage}のページで漢字が重複している：${row.kanji}`);
+      }
+      seen.add(row.kanji);
+      if (row.grade !== grades.get(row.kanji)) {
+        problems.push(
+          `${stage}のページの${row.kanji}の配当学年が${String(row.grade)}で、配当表の${String(grades.get(row.kanji))}と一致しない`,
+        );
+      }
     }
   }
   return problems;
 }
 
-/** 学年別ページが、配当表の並びどおりで、表のページと同じ音訓であることを確かめる。 */
-function checkGradePages(
-  rows: ReadonlyMap<string, OnkunKanji>,
-  gradePages: ReadonlyMap<number, readonly OnkunKanji[]>,
-  table: KanjiTable,
-): string[] {
-  return table.grades.flatMap((grade) => {
-    const page = gradePages.get(grade.grade);
-    if (!page) {
-      return [`第${grade.grade}学年のページがない`];
-    }
-    const order = page.map((item) => item.kanji).join('');
-    const problems =
-      order === grade.characters.join('')
-        ? []
-        : [`第${grade.grade}学年のページの漢字が、配当表の並びと一致しない`];
-    return problems.concat(
-      page
-        .filter((item) => rows.get(item.kanji)?.signature !== item.signature)
-        .map(
-          (item) =>
-            `第${grade.grade}学年のページの${item.kanji}が、表のページと一致しない`,
-        ),
-    );
-  });
-}
-
-/** 全ページの合計、重複、配当学年、学年別ページの一致を確かめる。 */
-export function checkOnkun(
-  readme: MarkdownFile,
-  kanji: readonly OnkunKanji[],
-  gradePages: ReadonlyMap<number, readonly OnkunKanji[]>,
-  table: KanjiTable,
-): string[] {
-  const problems = checkTotals(readme, kanji);
-  const rows = new Map<string, OnkunKanji>();
-  for (const item of kanji) {
-    if (rows.has(item.kanji)) {
-      problems.push(`漢字が重複している：${item.kanji}`);
-    }
-    rows.set(item.kanji, item);
-  }
+/** 段階ごとの件数、学年別ページの並び、配当学年の一致を確かめる。 */
+export function checkOnkun(set: OnkunSet, table: KanjiTable): string[] {
   return [
-    ...problems,
-    ...checkGrades(rows, table),
-    ...checkGradePages(rows, gradePages, table),
+    ...checkTotals(set),
+    ...checkGradePages(set, table),
+    ...checkStagePages(set, table),
   ];
 }

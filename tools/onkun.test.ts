@@ -3,30 +3,11 @@ import { test } from 'node:test';
 
 import type { KanjiTable } from './kanji.ts';
 import { checkOnkun, parseOnkunPage } from './onkun.ts';
+import type { OnkunSet } from './onkun.ts';
 
 const TABLE: KanjiTable = {
   total: 2,
   grades: [{ grade: 1, count: 2, cumulative: 2, characters: ['一', '右'] }],
-};
-
-const HEADER = [
-  '| 漢字 | 学年 | 小学校 | 中学校 | 高等学校 |',
-  '| --- | --- | --- | --- | --- |',
-];
-const ONE = '| 一 | 1 | イチ、イツ、ひと(特) | | |';
-const RIGHT = '| 右 | 1(改) | ウ、みぎ | ユウ(改) | |';
-
-const PAGE = {
-  path: 'table-1.md',
-  content: [
-    '- **字数**：3字',
-    '',
-    ...HEADER,
-    '| 亜 | | | ア | |',
-    ONE,
-    RIGHT,
-    '',
-  ].join('\n'),
 };
 
 const GRADE_1 = {
@@ -34,32 +15,59 @@ const GRADE_1 = {
   content: [
     '- **字数**：2字',
     '',
-    '| 漢字 | 小学校 | 中学校 | 高等学校 |',
-    '| --- | --- | --- | --- |',
-    '| 一 | イチ、イツ、ひと(特) | | |',
-    '| 右 | ウ、みぎ | ユウ(改) | |',
+    '| 漢字 | 音訓 |',
+    '| --- | --- |',
+    '| 一 | イチ、イツ、ひと(特) |',
+    '| 右 | ウ、みぎ |',
+    '',
+  ].join('\n'),
+};
+
+const LOWER = {
+  path: 'lower-secondary-1.md',
+  content: [
+    '- **字数**：2字',
+    '',
+    '| 漢字 | 配当学年 | 音訓 |',
+    '| --- | --- | --- |',
+    '| 亜 | | ア |',
+    '| 右 | 1(改) | ユウ(改) |',
     '',
   ].join('\n'),
 };
 
 const README = {
   path: 'README.md',
-  content: '- **漢字**：3字\n- **音訓**：7\n',
+  content: [
+    '- **漢字**：3字',
+    '- **音訓**：7',
+    '  - 小学校：5',
+    '  - 中学校：2',
+    '  - 高等学校：0',
+  ].join('\n'),
 };
 
-test('parseOnkunPage：漢字、学年、段階ごとの音訓を読み取る', () => {
-  const { kanji, problems } = parseOnkunPage(PAGE);
-  assert.deepEqual(problems, []);
-  assert.deepEqual(
-    kanji.map((item) => [
-      item.kanji,
-      item.grade,
-      item.readings.map(({ stage, reading }) => `${stage}:${reading}`),
+function setOf(readme = README, lower = LOWER): OnkunSet {
+  return {
+    readme,
+    grades: new Map([[1, parseOnkunPage(GRADE_1).rows]]),
+    stages: new Map([
+      ['中学校', parseOnkunPage(lower).rows],
+      ['高等学校', []],
     ]),
+  };
+}
+
+test('parseOnkunPage：学年別ページと段階のページを読み取る', () => {
+  const grade = parseOnkunPage(GRADE_1);
+  const lower = parseOnkunPage(LOWER);
+  assert.deepEqual([grade.kind, grade.problems], ['grade', []]);
+  assert.deepEqual([lower.kind, lower.problems], ['stage', []]);
+  assert.deepEqual(
+    lower.rows.map((row) => [row.kanji, row.grade, row.readings]),
     [
-      ['亜', undefined, ['中学校:ア']],
-      ['一', 1, ['小学校:イチ', '小学校:イツ', '小学校:ひと(特)']],
-      ['右', 1, ['小学校:ウ', '小学校:みぎ', '中学校:ユウ(改)']],
+      ['亜', undefined, ['ア']],
+      ['右', 1, ['ユウ(改)']],
     ],
   );
 });
@@ -67,7 +75,12 @@ test('parseOnkunPage：漢字、学年、段階ごとの音訓を読み取る', 
 test('parseOnkunPage：音訓の形のずれと、字数のずれを報告する', () => {
   const page = {
     path: 'a.md',
-    content: ['- **字数**：2字', ...HEADER, '| 亜 | | | ア* | |'].join('\n'),
+    content: [
+      '- **字数**：2字',
+      '| 漢字 | 配当学年 | 音訓 |',
+      '| --- | --- | --- |',
+      '| 亜 | | ア* |',
+    ].join('\n'),
   };
   assert.deepEqual(parseOnkunPage(page).problems, [
     'a.md: 音訓の形が正しくない：ア*',
@@ -75,40 +88,21 @@ test('parseOnkunPage：音訓の形のずれと、字数のずれを報告する
   ]);
 });
 
-test('checkOnkun：合計、配当学年、学年別ページがそろっていれば問題を返さない', () => {
-  const grades = new Map([[1, parseOnkunPage(GRADE_1).kanji]]);
-  assert.deepEqual(
-    checkOnkun(README, parseOnkunPage(PAGE).kanji, grades, TABLE),
-    [],
-  );
+test('checkOnkun：件数、並び、配当学年がそろっていれば問題を返さない', () => {
+  assert.deepEqual(checkOnkun(setOf(), TABLE), []);
 });
 
-test('checkOnkun：学年のずれ、表にない配当漢字、学年別ページのずれを報告する', () => {
-  const page = parseOnkunPage({
-    path: 'b.md',
-    content: [...HEADER, '| 一 | 2 | イチ | | |'].join('\n'),
-  }).kanji;
+test('checkOnkun：件数のずれと、配当学年のずれを報告する', () => {
+  const lower = {
+    path: 'lower-secondary-1.md',
+    content: LOWER.content.replace('| 右 | 1(改) |', '| 右 | 2 |'),
+  };
   const readme = {
     path: 'README.md',
-    content: '- **漢字**：1字\n- **音訓**：1\n',
+    content: README.content.replace('中学校：2', '中学校：3'),
   };
-  const grades = new Map([[1, parseOnkunPage(GRADE_1).kanji]]);
-  assert.deepEqual(checkOnkun(readme, page, grades, TABLE), [
-    '一の学年が2で、配当表の1と一致しない',
-    '配当表の漢字が表にない：右',
-    '第1学年のページの一が、表のページと一致しない',
-    '第1学年のページの右が、表のページと一致しない',
+  assert.deepEqual(checkOnkun(setOf(readme, lower), TABLE), [
+    '中学校の音訓が3で、表の2と一致しない',
+    '中学校のページの右の配当学年が2で、配当表の1と一致しない',
   ]);
-});
-
-test('parseOnkunPage：学年の列がない学年別ページを読み取る', () => {
-  const { kanji, problems } = parseOnkunPage(GRADE_1);
-  assert.deepEqual(problems, []);
-  assert.deepEqual(
-    kanji.map((item) => [item.kanji, item.grade, item.readings.length]),
-    [
-      ['一', undefined, 3],
-      ['右', undefined, 3],
-    ],
-  );
 });
