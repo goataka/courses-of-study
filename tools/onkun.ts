@@ -4,6 +4,8 @@ import type { KanjiTable } from './kanji.ts';
 import type { MarkdownFile } from './links.ts';
 
 const HEADER = '| 漢字 | 学年 | 小学校 | 中学校 | 高等学校 |';
+/** 学年別ページは学年の列を持たない */
+const GRADE_PAGE_HEADER = '| 漢字 | 小学校 | 中学校 | 高等学校 |';
 const STAGES = ['小学校', '中学校', '高等学校'] as const;
 const GRADE = /^(?:([1-6])(\(改\))?)?$/;
 const READING =
@@ -17,8 +19,8 @@ const READING_SEPARATOR = '、';
 export interface OnkunKanji {
   readonly kanji: string;
   readonly grade: number | undefined;
-  /** 行の内容をそのまま比べるための文字列 */
-  readonly row: string;
+  /** 段階と音訓を、ページをまたいで比べるための文字列 */
+  readonly signature: string;
   readonly readings: { stage: string; reading: string }[];
 }
 
@@ -32,8 +34,12 @@ function cellsOf(line: string): string[] {
 function parseRow(
   path: string,
   line: string,
+  withGrade: boolean,
 ): { item?: OnkunKanji; problems: string[] } {
-  const [kanji = '', grade = '', ...stages] = cellsOf(line);
+  const cells = cellsOf(line);
+  const kanji = cells[0] ?? '';
+  const grade = withGrade ? (cells[1] ?? '') : '';
+  const stages = cells.slice(withGrade ? 2 : 1);
   const gradeMatch = GRADE.exec(grade);
   if ([...kanji].length !== 1 || !gradeMatch || stages.length !== 3) {
     return { problems: [`${path}: 表の行の形が正しくない：${line}`] };
@@ -56,7 +62,7 @@ function parseRow(
     item: {
       kanji,
       grade: value ? Number(value) : undefined,
-      row: line,
+      signature: stages.join(CELL_SEPARATOR),
       readings,
     },
     problems,
@@ -69,7 +75,8 @@ export function parseOnkunPage(file: MarkdownFile): {
   problems: string[];
 } {
   const lines = file.content.split('\n');
-  const start = lines.indexOf(HEADER);
+  const withGrade = lines.includes(HEADER);
+  const start = lines.indexOf(withGrade ? HEADER : GRADE_PAGE_HEADER);
   if (start < 0) {
     return { kanji: [], problems: [`${file.path}: 表の見出し行がない`] };
   }
@@ -79,7 +86,7 @@ export function parseOnkunPage(file: MarkdownFile): {
     if (!line.startsWith(CELL_SEPARATOR)) {
       break;
     }
-    const parsed = parseRow(file.path, line);
+    const parsed = parseRow(file.path, line, withGrade);
     problems.push(...parsed.problems);
     if (parsed.item) {
       kanji.push(parsed.item);
@@ -141,7 +148,7 @@ function checkGrades(
   return problems;
 }
 
-/** 学年別ページが、配当表の並びどおりで、表のページと同じ行であることを確かめる。 */
+/** 学年別ページが、配当表の並びどおりで、表のページと同じ音訓であることを確かめる。 */
 function checkGradePages(
   rows: ReadonlyMap<string, OnkunKanji>,
   gradePages: ReadonlyMap<number, readonly OnkunKanji[]>,
@@ -159,7 +166,7 @@ function checkGradePages(
         : [`第${grade.grade}学年のページの漢字が、配当表の並びと一致しない`];
     return problems.concat(
       page
-        .filter((item) => rows.get(item.kanji)?.row !== item.row)
+        .filter((item) => rows.get(item.kanji)?.signature !== item.signature)
         .map(
           (item) =>
             `第${grade.grade}学年のページの${item.kanji}が、表のページと一致しない`,

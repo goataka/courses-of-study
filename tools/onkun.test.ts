@@ -31,7 +31,15 @@ const PAGE = {
 
 const GRADE_1 = {
   path: 'grade-1.md',
-  content: ['- **字数**：2字', '', ...HEADER, ONE, RIGHT, ''].join('\n'),
+  content: [
+    '- **字数**：2字',
+    '',
+    '| 漢字 | 小学校 | 中学校 | 高等学校 |',
+    '| --- | --- | --- | --- |',
+    '| 一 | イチ、イツ、ひと(特) | | |',
+    '| 右 | ウ、みぎ | ユウ(改) | |',
+    '',
+  ].join('\n'),
 };
 
 const README = {
@@ -91,4 +99,16 @@ test('checkOnkun：学年のずれ、表にない配当漢字、学年別ペー�
     '第1学年のページの一が、表のページと一致しない',
     '第1学年のページの右が、表のページと一致しない',
   ]);
+});
+
+test('parseOnkunPage：学年の列がない学年別ページを読み取る', () => {
+  const { kanji, problems } = parseOnkunPage(GRADE_1);
+  assert.deepEqual(problems, []);
+  assert.deepEqual(
+    kanji.map((item) => [item.kanji, item.grade, item.readings.length]),
+    [
+      ['一', undefined, 3],
+      ['右', undefined, 3],
+    ],
+  );
 });
