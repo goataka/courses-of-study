@@ -1,0 +1,81 @@
+{
+  "id": "japanese-g12",
+  "subject": "japanese",
+  "grades": [1, 2],
+  "name": "第1学年及び第2学年",
+  "code": "82102A0000000000",
+  "goals": [
+    {"id": "japanese-g12-goal-1", "code": "82102A2100000000", "no": "(1)", "kind": "goal", "category": "knowledge", "text": "日常生活に必要な国語の知識や技能を身に付ける。我が国の言語文化に親しんだり理解したりできるようにする"},
+    {"id": "japanese-g12-goal-2", "code": "82102A2200000000", "no": "(2)", "kind": "goal", "category": "thinking", "text": "順序立てて考える力や、感じたり想像したりする力を養う。日常生活における人との関わりの中で伝え合う力を高め、自分の思いや考えをもつことができるようにする", "keywords": ["順序立てて考える力"]},
+    {"id": "japanese-g12-goal-3", "code": "82102A2300000000", "no": "(3)", "kind": "goal", "category": "attitude", "text": "言葉がもつよさを感じ、楽しんで読書をする。国語を大切にして、思いや考えを伝え合おうとする態度を養う"}
+  ],
+  "contents": [
+    {"id": "japanese-g12-K", "code": "82102A3100000000", "no": "", "kind": "section", "title": "知識及び技能", "children": [
+      {"id": "japanese-g12-K-1", "code": "82102A3110000000", "no": "(1)", "kind": "section", "title": "言葉の特徴や使い方に関する事項", "children": [
+        {"id": "japanese-g12-K-1-a", "code": "82102A3111000000", "no": "ア", "kind": "item", "category": "knowledge", "text": "言葉には、事物の内容を表す働きや、経験したことを伝える働きがあることに気付く"},
+        {"id": "japanese-g12-K-1-i", "code": "82102A3112000000", "no": "イ", "kind": "item", "category": "knowledge", "text": "音節と文字との関係、アクセントによる語の意味の違いなどに気付く。姿勢や口形、発声や発音に注意して話す", "keywords": ["音節と文字", "アクセント"]},
+        {"id": "japanese-g12-K-1-u", "code": "82102A3113000000", "no": "ウ", "kind": "item", "category": "knowledge", "text": "長音、拗音、促音、撥音などの表記、助詞の「は」、「へ」、「を」の使い方、句読点の打ち方、かぎの使い方を理解して、文や文章の中で使う。平仮名と片仮名を読み、書く。片仮名で書く語の種類を知り、文や文章の中で使う", "keywords": ["長音、拗音、促音、撥音", "助詞", "句読点", "かぎ", "平仮名", "片仮名"]},
+        {"id": "japanese-g12-K-1-e", "code": "82102A3114000000", "no": "エ", "kind": "item", "category": "knowledge", "text": "第1学年では、学年別漢字配当表の第1学年に配当されている漢字を読み、漸次書き、文や文章の中で使う。第2学年では、第2学年までに配当されている漢字を読む。第2学年では、第1学年に配当されている漢字を書き、文や文章の中で使う。第2学年に配当されている漢字を漸次書き、文や文章の中で使う", "keywords": ["学年別漢字配当表"]},
+        {"id": "japanese-g12-K-1-o", "code": "82102A3115000000", "no": "オ", "kind": "item", "category": "knowledge", "text": "身近なことを表す語句の量を増し、話や文章の中で使う。言葉には意味による語句のまとまりがあることに気付き、語彙を豊かにする", "keywords": ["語句", "語彙"]},
+        {"id": "japanese-g12-K-1-ka", "code": "82102A3116000000", "no": "カ", "kind": "item", "category": "knowledge", "text": "文の中における主語と述語との関係に気付く", "keywords": ["主語と述語"]},
+        {"id": "japanese-g12-K-1-ki", "code": "82102A3117000000", "no": "キ", "kind": "item", "category": "knowledge", "text": "丁寧な言葉と普通の言葉との違いに気を付けて使う。敬体で書かれた文章に慣れる", "keywords": ["丁寧な言葉", "敬体"]},
+        {"id": "japanese-g12-K-1-ku", "code": "82102A3118000000", "no": "ク", "kind": "item", "category": "knowledge", "text": "語のまとまりや言葉の響きなどに気を付けて音読する", "keywords": ["音読"]}
+      ]},
+      {"id": "japanese-g12-K-2", "code": "82102A3120000000", "no": "(2)", "kind": "section", "title": "話や文章に含まれている情報の扱い方に関する事項", "children": [
+        {"id": "japanese-g12-K-2-a", "code": "82102A3121000000", "no": "ア", "kind": "item", "category": "knowledge", "text": "共通、相違、事柄の順序など、情報と情報との関係を理解する", "keywords": ["共通、相違、事柄の順序"]}
+      ]},
+      {"id": "japanese-g12-K-3", "code": "82102A3130000000", "no": "(3)", "kind": "section", "title": "我が国の言語文化に関する事項", "children": [
+        {"id": "japanese-g12-K-3-a", "code": "82102A3131000000", "no": "ア", "kind": "item", "category": "knowledge", "text": "昔話や神話、伝承などの読み聞かせを聞くなどして、我が国の伝統的な言語文化に親しむ", "keywords": ["昔話や神話、伝承"]},
+        {"id": "japanese-g12-K-3-i", "code": "82102A3132000000", "no": "イ", "kind": "item", "category": "knowledge", "text": "長く親しまれている言葉遊びを通して、言葉の豊かさに気付く", "keywords": ["言葉遊び"]},
+        {"id": "japanese-g12-K-3-u", "code": "82102A3133000000", "no": "ウ", "kind": "item", "category": "knowledge", "text": "書写に関する次の事項を理解し使う", "keywords": ["書写"], "children": [
+          {"id": "japanese-g12-K-3-u-a", "code": "82102A3133100000", "no": "(ア)", "kind": "item", "category": "knowledge", "text": "姿勢や筆記具の持ち方を正しくして書く", "keywords": ["姿勢や筆記具の持ち方"]},
+          {"id": "japanese-g12-K-3-u-i", "code": "82102A3133200000", "no": "(イ)", "kind": "item", "category": "knowledge", "text": "点画の書き方や文字の形に注意しながら、筆順に従って丁寧に書く", "keywords": ["筆順"]},
+          {"id": "japanese-g12-K-3-u-u", "code": "82102A3133300000", "no": "(ウ)", "kind": "item", "category": "knowledge", "text": "点画相互の接し方や交わり方、長短や方向などに注意して、文字を正しく書く"}
+        ]},
+        {"id": "japanese-g12-K-3-e", "code": "82102A3134000000", "no": "エ", "kind": "item", "category": "knowledge", "text": "読書に親しみ、いろいろな本があることを知る", "keywords": ["読書"]}
+      ]}
+    ]},
+    {"id": "japanese-g12-A", "code": "82102A3210000000", "no": "A", "kind": "section", "title": "話すこと・聞くこと", "children": [
+      {"id": "japanese-g12-A-1", "code": "82102A3211000000", "no": "(1)", "kind": "section", "title": "話すこと・聞くことに関する事項", "children": [
+        {"id": "japanese-g12-A-1-a", "code": "82102A3211100000", "no": "ア", "kind": "item", "category": "thinking", "text": "身近なことや経験したことなどから話題を決め、伝え合うために必要な事柄を選ぶ", "keywords": ["話題"]},
+        {"id": "japanese-g12-A-1-i", "code": "82102A3211200000", "no": "イ", "kind": "item", "category": "thinking", "text": "相手に伝わるように、行動したことや経験したことに基づいて、話す事柄の順序を考える", "keywords": ["順序"]},
+        {"id": "japanese-g12-A-1-u", "code": "82102A3211300000", "no": "ウ", "kind": "item", "category": "thinking", "text": "伝えたい事柄や相手に応じて、声の大きさや速さなどを工夫する", "keywords": ["声の大きさや速さ"]},
+        {"id": "japanese-g12-A-1-e", "code": "82102A3211400000", "no": "エ", "kind": "item", "category": "thinking", "text": "話し手が知らせたいことや自分が聞きたいことを落とさないように集中して聞き、話の内容を捉えて感想をもつ", "keywords": ["感想"]},
+        {"id": "japanese-g12-A-1-o", "code": "82102A3211500000", "no": "オ", "kind": "item", "category": "thinking", "text": "互いの話に関心をもち、相手の発言を受けて話をつなぐ"}
+      ]},
+      {"id": "japanese-g12-A-2", "code": "82102A3212000000", "no": "(2)", "kind": "section", "title": "言語活動の例", "children": [
+        {"id": "japanese-g12-A-2-a", "code": "82102A3212100000", "no": "ア", "kind": "activity", "text": "紹介や説明、報告など伝えたいことを話したり、それらを聞いて声に出して確かめたり感想を述べたりする活動", "keywords": ["紹介や説明、報告"]},
+        {"id": "japanese-g12-A-2-i", "code": "82102A3212200000", "no": "イ", "kind": "activity", "text": "尋ねたり応答したりするなどして、少人数で話し合う活動", "keywords": ["少人数で話し合う"]}
+      ]}
+    ]},
+    {"id": "japanese-g12-B", "code": "82102A3220000000", "no": "B", "kind": "section", "title": "書くこと", "children": [
+      {"id": "japanese-g12-B-1", "code": "82102A3221000000", "no": "(1)", "kind": "section", "title": "書くことに関する事項", "children": [
+        {"id": "japanese-g12-B-1-a", "code": "82102A3221100000", "no": "ア", "kind": "item", "category": "thinking", "text": "経験したことや想像したことなどから書くことを見付け、必要な事柄を集めたり確かめたりして、伝えたいことを明確にする"},
+        {"id": "japanese-g12-B-1-i", "code": "82102A3221200000", "no": "イ", "kind": "item", "category": "thinking", "text": "自分の思いや考えが明確になるように、事柄の順序に沿って簡単な構成を考える", "keywords": ["簡単な構成"]},
+        {"id": "japanese-g12-B-1-u", "code": "82102A3221300000", "no": "ウ", "kind": "item", "category": "thinking", "text": "語と語や文と文との続き方に注意しながら、内容のまとまりが分かるように書き表し方を工夫する"},
+        {"id": "japanese-g12-B-1-e", "code": "82102A3221400000", "no": "エ", "kind": "item", "category": "thinking", "text": "文章を読み返す習慣を付ける。間違いを正したり、語と語や文と文との続き方を確かめたりする", "keywords": ["読み返す習慣"]},
+        {"id": "japanese-g12-B-1-o", "code": "82102A3221500000", "no": "オ", "kind": "item", "category": "thinking", "text": "文章に対する感想を伝え合い、自分の文章の内容や表現のよいところを見付ける"}
+      ]},
+      {"id": "japanese-g12-B-2", "code": "82102A3222000000", "no": "(2)", "kind": "section", "title": "言語活動の例", "children": [
+        {"id": "japanese-g12-B-2-a", "code": "82102A3222100000", "no": "ア", "kind": "activity", "text": "身近なことや経験したことを報告したり、観察したことを記録したりするなど、見聞きしたことを書く活動", "keywords": ["報告", "記録"]},
+        {"id": "japanese-g12-B-2-i", "code": "82102A3222200000", "no": "イ", "kind": "activity", "text": "日記や手紙を書くなど、思ったことや伝えたいことを書く活動", "keywords": ["日記や手紙"]},
+        {"id": "japanese-g12-B-2-u", "code": "82102A3222300000", "no": "ウ", "kind": "activity", "text": "簡単な物語をつくるなど、感じたことや想像したことを書く活動", "keywords": ["簡単な物語"]}
+      ]}
+    ]},
+    {"id": "japanese-g12-C", "code": "82102A3230000000", "no": "C", "kind": "section", "title": "読むこと", "children": [
+      {"id": "japanese-g12-C-1", "code": "82102A3231000000", "no": "(1)", "kind": "section", "title": "読むことに関する事項", "children": [
+        {"id": "japanese-g12-C-1-a", "code": "82102A3231100000", "no": "ア", "kind": "item", "category": "thinking", "text": "時間的な順序や事柄の順序などを考えながら、内容の大体を捉える", "keywords": ["時間的な順序や事柄の順序"]},
+        {"id": "japanese-g12-C-1-i", "code": "82102A3231200000", "no": "イ", "kind": "item", "category": "thinking", "text": "場面の様子や登場人物の行動など、内容の大体を捉える", "keywords": ["場面の様子や登場人物の行動"]},
+        {"id": "japanese-g12-C-1-u", "code": "82102A3231300000", "no": "ウ", "kind": "item", "category": "thinking", "text": "文章の中の重要な語や文を考えて選び出す", "keywords": ["重要な語や文"]},
+        {"id": "japanese-g12-C-1-e", "code": "82102A3231400000", "no": "エ", "kind": "item", "category": "thinking", "text": "場面の様子に着目して、登場人物の行動を具体的に想像する"},
+        {"id": "japanese-g12-C-1-o", "code": "82102A3231500000", "no": "オ", "kind": "item", "category": "thinking", "text": "文章の内容と自分の体験とを結び付けて、感想をもつ"},
+        {"id": "japanese-g12-C-1-ka", "code": "82102A3231600000", "no": "カ", "kind": "item", "category": "thinking", "text": "文章を読んで感じたことや分かったことを共有する"}
+      ]},
+      {"id": "japanese-g12-C-2", "code": "82102A3232000000", "no": "(2)", "kind": "section", "title": "言語活動の例", "children": [
+        {"id": "japanese-g12-C-2-a", "code": "82102A3232100000", "no": "ア", "kind": "activity", "text": "事物の仕組みを説明した文章などを読み、分かったことや考えたことを述べる活動"},
+        {"id": "japanese-g12-C-2-i", "code": "82102A3232200000", "no": "イ", "kind": "activity", "text": "読み聞かせを聞いたり物語などを読んだりして、内容や感想などを伝え合ったり、演じたりする活動"},
+        {"id": "japanese-g12-C-2-u", "code": "82102A3232300000", "no": "ウ", "kind": "activity", "text": "学校図書館などを利用し、図鑑や科学的なことについて書いた本などを読み、分かったことなどを説明する活動"}
+      ]}
+    ]}
+  ]
+}
