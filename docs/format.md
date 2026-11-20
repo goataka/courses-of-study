@@ -25,6 +25,7 @@
   - 補足：国語は2学年のまとまりで、`grade-1-2.md` のように書く
 - **`docs/lower-secondary/social-studies/<分野>.md`**：中学校社会の分野ごとの目標、内容、内容の取扱い
   - 分野：`geography` は地理的分野、`history` は歴史的分野、`civics` は公民的分野
+- **`docs/lower-secondary/science/field-<分野>.md`**：中学校理科の第1分野と第2分野
 - **`docs/<段階>/<教科ID>/english.md`**：外国語の英語の目標、内容、指導計画の作成と内容の取扱い
 - **`docs/<段階>/<教科ID>/planning.md`**：指導計画の作成と内容の取扱い
 - **`docs/elementary/japanese/kanji.md`**：小学校の学年別漢字配当表
@@ -109,7 +110,7 @@
 - **ページID**：`<教科ID>-g<学年>`
   - 例：`math-g3`、`japanese-g12`、`jh-japanese-g1`
 - **分野別ページのID**：`jh-<教科ID>-<分野>`
-  - 例：`jh-social-studies-geography`
+  - 例：`jh-social-studies-geography`、`jh-science-field1`
 - **言語別ページのID**：`<教科ID>-<言語>`
   - 例：`foreign-language-english`
 - **段階**：中学校の ID は、先頭に `jh-` を付ける
