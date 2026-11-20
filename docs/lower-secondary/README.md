@@ -15,3 +15,4 @@
 - **[社会](social-studies/README.md)**
 - **[数学](math/README.md)**
 - **[理科](science/README.md)**
+- **[外国語](foreign-language/README.md)**：英語
