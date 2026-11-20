@@ -1,0 +1,111 @@
+{
+  "id": "social-studies-g6",
+  "subject": "social-studies",
+  "grades": [6],
+  "name": "第6学年",
+  "code": "8220260000000000",
+  "goalsText": "社会的事象の見方・考え方を働かせ、学習の問題を追究し解決する活動を通して、次の資質と能力を育成する",
+  "goals": [
+    {"id": "social-studies-g6-goal-1", "code": "8220262100000000", "no": "(1)", "kind": "goal", "category": "knowledge", "text": "我が国の政治の考え方と仕組みや働き、国家と社会の発展に大きな働きをした先人の業績や優れた文化遺産、我が国と関係の深い国の生活、グローバル化する国際社会における我が国の役割について理解する。地図帳や地球儀、統計や年表などの各種の基礎的資料を通して、情報を適切に調べまとめる技能を身に付ける"},
+    {"id": "social-studies-g6-goal-2", "code": "8220262200000000", "no": "(2)", "kind": "goal", "category": "thinking", "text": "社会的事象の特色や相互の関連、意味を多角的に考える力を養う。社会に見られる課題を把握して、その解決に向けて社会への関わり方を選択し判断する力を養う。考えたことや選択し判断したことを説明したり、それらを基に議論したりする力を養う"},
+    {"id": "social-studies-g6-goal-3", "code": "8220262300000000", "no": "(3)", "kind": "goal", "category": "attitude", "text": "社会的事象について、主体的に学習の問題を解決しようとする態度や、よりよい社会を考え学習したことを社会生活に生かそうとする態度を養う。多角的な思考や理解を通して、我が国の歴史や伝統を大切にして国を愛する心情、我が国の将来を担う国民としての自覚、平和を願う日本人として世界の国々の人々と共に生きることの大切さについての自覚を養う"}
+  ],
+  "contents": [
+    {"id": "social-studies-g6-1", "code": "8220263100000000", "no": "(1)", "kind": "section", "title": "我が国の政治の働き", "children": [
+      {"id": "social-studies-g6-1-a-a", "code": "8220263111000000", "no": "ア(ア)", "kind": "item", "category": "knowledge", "text": "日本国憲法は、国家の理想、天皇の地位、国民としての権利及び義務など、国家や国民生活の基本を定めていることを理解する。現在の我が国の民主政治は、日本国憲法の基本的な考え方に基づいていることを理解する。立法、行政、司法の三権がそれぞれの役割を果たしていることを理解する", "keywords": ["日本国憲法", "立法、行政、司法の三権"]},
+      {"id": "social-studies-g6-1-a-i", "code": "8220263112000000", "no": "ア(イ)", "kind": "item", "category": "knowledge", "text": "国や地方公共団体の政治は、国民主権の考え方の下、国民生活の安定と向上を図る大切な働きをしていることを理解する", "keywords": ["国民主権"]},
+      {"id": "social-studies-g6-1-a-u", "code": "8220263113000000", "no": "ア(ウ)", "kind": "item", "category": "knowledge", "text": "見学や調査をしたり、各種の資料で調べたりして、まとめる"},
+      {"id": "social-studies-g6-1-i-a", "code": "8220263121000000", "no": "イ(ア)", "kind": "item", "category": "thinking", "text": "日本国憲法の基本的な考え方に着目して、我が国の民主政治を捉え、日本国憲法が国民生活に果たす役割や、国会、内閣、裁判所と国民との関わりを考え、表現する"},
+      {"id": "social-studies-g6-1-i-i", "code": "8220263122000000", "no": "イ(イ)", "kind": "item", "category": "thinking", "text": "政策の内容や計画から実施までの過程、法令や予算との関わりなどに着目して、国や地方公共団体の政治の取組を捉え、国民生活における政治の働きを考え、表現する"}
+    ]},
+    {"id": "social-studies-g6-2", "code": "8220263200000000", "no": "(2)", "kind": "section", "title": "我が国の歴史上の主な事象", "text": "知識及び技能を身に付ける際、我が国の歴史上の主な事象を手掛かりに、大まかな歴史を理解し、関連する先人の業績、優れた文化遺産を理解する", "children": [
+      {"id": "social-studies-g6-2-a-a", "code": "8220263211000000", "no": "ア(ア)", "kind": "item", "category": "knowledge", "text": "狩猟や採集、農耕の生活、古墳、大和朝廷による統一の様子を手掛かりに、むらからくにへと変化したことを理解する。大和朝廷は大和政権とも表す。その際、神話や伝承を手掛かりに、国の形成に関する考え方などに関心をもつ", "keywords": ["古墳", "大和朝廷"]},
+      {"id": "social-studies-g6-2-a-i", "code": "8220263212000000", "no": "ア(イ)", "kind": "item", "category": "knowledge", "text": "大陸文化の摂取、大化の改新、大仏造営の様子を手掛かりに、天皇を中心とした政治が確立されたことを理解する", "keywords": ["大化の改新", "大仏造営"]},
+      {"id": "social-studies-g6-2-a-u", "code": "8220263213000000", "no": "ア(ウ)", "kind": "item", "category": "knowledge", "text": "貴族の生活や文化を手掛かりに、日本風の文化が生まれたことを理解する", "keywords": ["日本風の文化"]},
+      {"id": "social-studies-g6-2-a-e", "code": "8220263214000000", "no": "ア(エ)", "kind": "item", "category": "knowledge", "text": "源平の戦い、鎌倉幕府の始まり、元との戦いを手掛かりに、武士による政治が始まったことを理解する", "keywords": ["鎌倉幕府"]},
+      {"id": "social-studies-g6-2-a-o", "code": "8220263215000000", "no": "ア(オ)", "kind": "item", "category": "knowledge", "text": "京都の室町に幕府が置かれた頃の代表的な建造物や絵画を手掛かりに、今日の生活文化につながる室町文化が生まれたことを理解する", "keywords": ["室町文化"]},
+      {"id": "social-studies-g6-2-a-ka", "code": "8220263216000000", "no": "ア(カ)", "kind": "item", "category": "knowledge", "text": "キリスト教の伝来、織田と豊臣の天下統一を手掛かりに、戦国の世が統一されたことを理解する", "keywords": ["天下統一"]},
+      {"id": "social-studies-g6-2-a-ki", "code": "8220263217000000", "no": "ア(キ)", "kind": "item", "category": "knowledge", "text": "江戸幕府の始まり、参勤交代や鎖国などの幕府の政策、身分制を手掛かりに、武士による政治が安定したことを理解する", "keywords": ["江戸幕府"]},
+      {"id": "social-studies-g6-2-a-ku", "code": "8220263218000000", "no": "ア(ク)", "kind": "item", "category": "knowledge", "text": "歌舞伎や浮世絵、国学や蘭学を手掛かりに、町人の文化が栄え、新しい学問がおこったことを理解する", "keywords": ["町人の文化"]},
+      {"id": "social-studies-g6-2-a-ke", "code": "8220263219000000", "no": "ア(ケ)", "kind": "item", "category": "knowledge", "text": "黒船の来航、廃藩置県や四民平等などの改革、文明開化などを手掛かりに、我が国が明治維新を機に、欧米の文化を取り入れつつ近代化を進めたことを理解する", "keywords": ["明治維新"]},
+      {"id": "social-studies-g6-2-a-ko", "code": "822026321A000000", "no": "ア(コ)", "kind": "item", "category": "knowledge", "text": "大日本帝国憲法の発布、日清と日露の戦争、条約改正、科学の発展などを手掛かりに、我が国の国力が充実し、国際的地位が向上したことを理解する", "keywords": ["大日本帝国憲法"]},
+      {"id": "social-studies-g6-2-a-sa", "code": "822026321B000000", "no": "ア(サ)", "kind": "item", "category": "knowledge", "text": "日中戦争や我が国に関わる第二次世界大戦、日本国憲法の制定、オリンピックとパラリンピックの開催などを手掛かりに、戦後我が国は民主的な国家として出発し、国民生活が向上し、国際社会の中で重要な役割を果たしてきたことを理解する", "keywords": ["日本国憲法の制定"]},
+      {"id": "social-studies-g6-2-a-shi", "code": "822026321C000000", "no": "ア(シ)", "kind": "item", "category": "knowledge", "text": "遺跡や文化財、地図や年表などの資料で調べ、まとめる"},
+      {"id": "social-studies-g6-2-i-a", "code": "8220263221000000", "no": "イ(ア)", "kind": "item", "category": "thinking", "text": "世の中の様子、人物の働きや代表的な文化遺産などに着目して、我が国の歴史上の主な事象を捉え、我が国の歴史の展開を考える。歴史を学ぶ意味を考え、表現する"}
+    ]},
+    {"id": "social-studies-g6-3", "code": "8220263300000000", "no": "(3)", "kind": "section", "title": "グローバル化する世界と日本の役割", "children": [
+      {"id": "social-studies-g6-3-a-a", "code": "8220263311000000", "no": "ア(ア)", "kind": "item", "category": "knowledge", "text": "我が国と経済や文化などの面でつながりが深い国の人々の生活は、多様であることを理解する。スポーツや文化などを通して他国と交流し、異なる文化や習慣を尊重し合うことが大切であることを理解する", "keywords": ["異なる文化や習慣を尊重"]},
+      {"id": "social-studies-g6-3-a-i", "code": "8220263312000000", "no": "ア(イ)", "kind": "item", "category": "knowledge", "text": "我が国は、平和な世界の実現のために国際連合の一員として重要な役割を果たしたり、諸外国の発展のために援助や協力を行ったりしていることを理解する", "keywords": ["国際連合"]},
+      {"id": "social-studies-g6-3-a-u", "code": "8220263313000000", "no": "ア(ウ)", "kind": "item", "category": "knowledge", "text": "地図帳や地球儀、各種の資料で調べ、まとめる"},
+      {"id": "social-studies-g6-3-i-a", "code": "8220263321000000", "no": "イ(ア)", "kind": "item", "category": "thinking", "text": "外国の人々の生活の様子などに着目して、日本の文化や習慣との違いを捉え、国際交流の果たす役割を考え、表現する"},
+      {"id": "social-studies-g6-3-i-i", "code": "8220263322000000", "no": "イ(イ)", "kind": "item", "category": "thinking", "text": "地球規模で発生している課題の解決に向けた連携や協力などに着目して、国際連合の働きや我が国の国際協力の様子を捉え、国際社会において我が国が果たしている役割を考え、表現する"}
+    ]}
+  ],
+  "handling": [
+    {"id": "social-studies-g6-handling-1", "code": "8220265100000000", "no": "(1)", "kind": "handling", "refs": ["social-studies-g6-1"], "children": [
+      {"id": "social-studies-g6-handling-1-a", "code": "8220265110000000", "no": "ア", "kind": "handling", "text": "アの(ア)については、国会などの議会政治や選挙の意味、国会と内閣と裁判所の三権相互の関連、裁判員制度や租税の役割などを扱う。その際、イの(ア)に関わって、国民としての政治への関わり方について多角的に考えて、自分の考えをまとめることができるよう配慮する", "keywords": ["議会政治や選挙", "裁判員制度", "租税の役割"], "refs": ["social-studies-g6-1-a-a", "social-studies-g6-1-i-a"]},
+      {"id": "social-studies-g6-handling-1-i", "code": "8220265120000000", "no": "イ", "kind": "handling", "text": "「天皇の地位」については、日本国憲法に定める天皇の国事に関する行為など、児童に理解しやすい事項を取り上げ、歴史に関する学習との関連も図りながら、天皇についての理解と敬愛の念を深めるようにする。「国民としての権利及び義務」については、参政権、納税の義務などを取り上げる", "keywords": ["天皇の国事に関する行為", "参政権、納税の義務"], "refs": ["social-studies-g6-1-a-a"]},
+      {"id": "social-studies-g6-handling-1-u", "code": "8220265130000000", "no": "ウ", "kind": "handling", "text": "「国や地方公共団体の政治」については、社会保障、自然災害からの復旧や復興、地域の開発や活性化などの取組の中から選択して取り上げる", "keywords": ["社会保障、自然災害からの復旧や復興、地域の開発や活性化"], "refs": ["social-studies-g6-1-a-i"]},
+      {"id": "social-studies-g6-handling-1-e", "code": "8220265140000000", "no": "エ", "kind": "handling", "text": "「国会」について、国民との関わりを指導する際には、各々の国民の祝日に関心をもち、我が国の社会や文化における意義を考えることができるよう配慮する", "keywords": ["国民の祝日"], "refs": ["social-studies-g6-1-i-a"]}
+    ]},
+    {"id": "social-studies-g6-handling-2", "code": "8220265200000000", "no": "(2)", "kind": "handling", "refs": ["social-studies-g6-2"], "children": [
+      {"id": "social-studies-g6-handling-2-a", "code": "8220265210000000", "no": "ア", "kind": "handling", "text": "児童の興味や関心を重視し、取り上げる人物や文化遺産の重点の置き方に工夫を加えるなど、精選して具体的に理解できるようにする。その際、アの(サ)の指導では、児童の発達の段階を考慮する", "refs": ["social-studies-g6-2-a-a", "social-studies-g6-2-a-i", "social-studies-g6-2-a-u", "social-studies-g6-2-a-e", "social-studies-g6-2-a-o", "social-studies-g6-2-a-ka", "social-studies-g6-2-a-ki", "social-studies-g6-2-a-ku", "social-studies-g6-2-a-ke", "social-studies-g6-2-a-ko", "social-studies-g6-2-a-sa"]},
+      {"id": "social-studies-g6-handling-2-i", "code": "8220265220000000", "no": "イ", "kind": "handling", "text": "例えば、国宝、重要文化財に指定されているものや、世界文化遺産に登録されているものなどを取り上げ、我が国の代表的な文化遺産を通して学習できるように配慮する", "keywords": ["国宝、重要文化財", "世界文化遺産"], "refs": ["social-studies-g6-2-a-a", "social-studies-g6-2-a-i", "social-studies-g6-2-a-u", "social-studies-g6-2-a-e", "social-studies-g6-2-a-o", "social-studies-g6-2-a-ka", "social-studies-g6-2-a-ki", "social-studies-g6-2-a-ku", "social-studies-g6-2-a-ke", "social-studies-g6-2-a-ko", "social-studies-g6-2-a-sa"]},
+      {"id": "social-studies-g6-handling-2-u", "code": "8220265230000000", "no": "ウ", "kind": "handling", "text": "例えば、次に掲げる人物を取り上げ、人物の働きを通して学習できるよう指導する", "keywords": ["人物"], "refs": ["social-studies-g6-2-a-a", "social-studies-g6-2-a-i", "social-studies-g6-2-a-u", "social-studies-g6-2-a-e", "social-studies-g6-2-a-o", "social-studies-g6-2-a-ka", "social-studies-g6-2-a-ki", "social-studies-g6-2-a-ku", "social-studies-g6-2-a-ke", "social-studies-g6-2-a-ko"], "children": [
+        {"id": "social-studies-g6-handling-2-u-1", "code": "8220265230100000", "no": "", "kind": "term", "text": "卑弥呼", "ruby": "卑弥呼《ひみこ》"},
+        {"id": "social-studies-g6-handling-2-u-2", "code": "8220265230200000", "no": "", "kind": "term", "text": "聖徳太子", "ruby": "聖徳太子《しょうとくたいし》"},
+        {"id": "social-studies-g6-handling-2-u-3", "code": "8220265230300000", "no": "", "kind": "term", "text": "小野妹子", "ruby": "小野妹子《おののいもこ》"},
+        {"id": "social-studies-g6-handling-2-u-4", "code": "8220265230400000", "no": "", "kind": "term", "text": "中大兄皇子", "ruby": "中大兄皇子《なかのおおえのおうじ》"},
+        {"id": "social-studies-g6-handling-2-u-5", "code": "8220265230500000", "no": "", "kind": "term", "text": "中臣鎌足", "ruby": "中臣鎌足《なかとみのかまたり》"},
+        {"id": "social-studies-g6-handling-2-u-6", "code": "8220265230600000", "no": "", "kind": "term", "text": "聖武天皇", "ruby": "聖武《しょうむ》天皇"},
+        {"id": "social-studies-g6-handling-2-u-7", "code": "8220265230700000", "no": "", "kind": "term", "text": "行基", "ruby": "行基《ぎょうき》"},
+        {"id": "social-studies-g6-handling-2-u-8", "code": "8220265230800000", "no": "", "kind": "term", "text": "鑑真", "ruby": "鑑真《がんじん》"},
+        {"id": "social-studies-g6-handling-2-u-9", "code": "8220265230900000", "no": "", "kind": "term", "text": "藤原道長", "ruby": "藤原道長《ふじわらのみちなが》"},
+        {"id": "social-studies-g6-handling-2-u-10", "code": "8220265231000000", "no": "", "kind": "term", "text": "紫式部", "ruby": "紫式部《むらさきしきぶ》"},
+        {"id": "social-studies-g6-handling-2-u-11", "code": "8220265231100000", "no": "", "kind": "term", "text": "清少納言", "ruby": "清少納言《せいしょうなごん》"},
+        {"id": "social-studies-g6-handling-2-u-12", "code": "8220265231200000", "no": "", "kind": "term", "text": "平清盛", "ruby": "平清盛《たいらのきよもり》"},
+        {"id": "social-studies-g6-handling-2-u-13", "code": "8220265231300000", "no": "", "kind": "term", "text": "源頼朝", "ruby": "源頼朝《みなもとのよりとも》"},
+        {"id": "social-studies-g6-handling-2-u-14", "code": "8220265231400000", "no": "", "kind": "term", "text": "源義経", "ruby": "源義経《みなもとのよしつね》"},
+        {"id": "social-studies-g6-handling-2-u-15", "code": "8220265231500000", "no": "", "kind": "term", "text": "北条時宗", "ruby": "北条時宗《ほうじょうときむね》"},
+        {"id": "social-studies-g6-handling-2-u-16", "code": "8220265231600000", "no": "", "kind": "term", "text": "足利義満", "ruby": "足利義満《あしかがよしみつ》"},
+        {"id": "social-studies-g6-handling-2-u-17", "code": "8220265231700000", "no": "", "kind": "term", "text": "足利義政", "ruby": "足利義政《あしかがよしまさ》"},
+        {"id": "social-studies-g6-handling-2-u-18", "code": "8220265231800000", "no": "", "kind": "term", "text": "雪舟", "ruby": "雪舟《せっしゅう》"},
+        {"id": "social-studies-g6-handling-2-u-19", "code": "8220265231900000", "no": "", "kind": "term", "text": "ザビエル"},
+        {"id": "social-studies-g6-handling-2-u-20", "code": "8220265232000000", "no": "", "kind": "term", "text": "織田信長", "ruby": "織田信長《おだのぶなが》"},
+        {"id": "social-studies-g6-handling-2-u-21", "code": "8220265232100000", "no": "", "kind": "term", "text": "豊臣秀吉", "ruby": "豊臣秀吉《とよとみひでよし》"},
+        {"id": "social-studies-g6-handling-2-u-22", "code": "8220265232200000", "no": "", "kind": "term", "text": "徳川家康", "ruby": "徳川家康《とくがわいえやす》"},
+        {"id": "social-studies-g6-handling-2-u-23", "code": "8220265232300000", "no": "", "kind": "term", "text": "徳川家光", "ruby": "徳川家光《とくがわいえみつ》"},
+        {"id": "social-studies-g6-handling-2-u-24", "code": "8220265232400000", "no": "", "kind": "term", "text": "近松門左衛門", "ruby": "近松門左衛門《ちかまつもんざえもん》"},
+        {"id": "social-studies-g6-handling-2-u-25", "code": "8220265232500000", "no": "", "kind": "term", "text": "歌川広重", "ruby": "歌川広重《うたがわひろしげ》"},
+        {"id": "social-studies-g6-handling-2-u-26", "code": "8220265232600000", "no": "", "kind": "term", "text": "本居宣長", "ruby": "本居宣長《もとおりのりなが》"},
+        {"id": "social-studies-g6-handling-2-u-27", "code": "8220265232700000", "no": "", "kind": "term", "text": "杉田玄白", "ruby": "杉田玄白《すぎたげんぱく》"},
+        {"id": "social-studies-g6-handling-2-u-28", "code": "8220265232800000", "no": "", "kind": "term", "text": "伊能忠敬", "ruby": "伊能忠敬《いのうただたか》"},
+        {"id": "social-studies-g6-handling-2-u-29", "code": "8220265232900000", "no": "", "kind": "term", "text": "ペリー"},
+        {"id": "social-studies-g6-handling-2-u-30", "code": "8220265233000000", "no": "", "kind": "term", "text": "勝海舟", "ruby": "勝海舟《かつかいしゅう》"},
+        {"id": "social-studies-g6-handling-2-u-31", "code": "8220265233100000", "no": "", "kind": "term", "text": "西郷隆盛", "ruby": "西郷隆盛《さいごうたかもり》"},
+        {"id": "social-studies-g6-handling-2-u-32", "code": "8220265233200000", "no": "", "kind": "term", "text": "大久保利通", "ruby": "大久保利通《おおくぼとしみち》"},
+        {"id": "social-studies-g6-handling-2-u-33", "code": "8220265233300000", "no": "", "kind": "term", "text": "木戸孝允", "ruby": "木戸孝允《きどたかよし》"},
+        {"id": "social-studies-g6-handling-2-u-34", "code": "8220265233400000", "no": "", "kind": "term", "text": "明治天皇"},
+        {"id": "social-studies-g6-handling-2-u-35", "code": "8220265233500000", "no": "", "kind": "term", "text": "福沢諭吉", "ruby": "福沢諭吉《ふくざわゆきち》"},
+        {"id": "social-studies-g6-handling-2-u-36", "code": "8220265233600000", "no": "", "kind": "term", "text": "大隈重信", "ruby": "大隈重信《おおくましげのぶ》"},
+        {"id": "social-studies-g6-handling-2-u-37", "code": "8220265233700000", "no": "", "kind": "term", "text": "板垣退助", "ruby": "板垣退助《いたがきたいすけ》"},
+        {"id": "social-studies-g6-handling-2-u-38", "code": "8220265233800000", "no": "", "kind": "term", "text": "伊藤博文", "ruby": "伊藤博文《いとうひろぶみ》"},
+        {"id": "social-studies-g6-handling-2-u-39", "code": "8220265233900000", "no": "", "kind": "term", "text": "陸奥宗光", "ruby": "陸奥宗光《むつむねみつ》"},
+        {"id": "social-studies-g6-handling-2-u-40", "code": "8220265234000000", "no": "", "kind": "term", "text": "東郷平八郎", "ruby": "東郷平八郎《とうごうへいはちろう》"},
+        {"id": "social-studies-g6-handling-2-u-41", "code": "8220265234100000", "no": "", "kind": "term", "text": "小村寿太郎", "ruby": "小村寿太郎《こむらじゅたろう》"},
+        {"id": "social-studies-g6-handling-2-u-42", "code": "8220265234200000", "no": "", "kind": "term", "text": "野口英世", "ruby": "野口英世《のぐちひでよ》"}
+      ]},
+      {"id": "social-studies-g6-handling-2-e", "code": "8220265240000000", "no": "エ", "kind": "handling", "text": "「神話・伝承」については、古事記、日本書紀、風土記などの中から適切なものを取り上げる", "keywords": ["古事記、日本書紀、風土記"], "refs": ["social-studies-g6-2-a-a"]},
+      {"id": "social-studies-g6-handling-2-o", "code": "8220265250000000", "no": "オ", "kind": "handling", "text": "当時の世界との関わりにも目を向け、我が国の歴史を広い視野から捉えられるよう配慮する", "refs": ["social-studies-g6-2-a-i", "social-studies-g6-2-a-u", "social-studies-g6-2-a-e", "social-studies-g6-2-a-o", "social-studies-g6-2-a-ka", "social-studies-g6-2-a-ki", "social-studies-g6-2-a-ku", "social-studies-g6-2-a-ke", "social-studies-g6-2-a-ko", "social-studies-g6-2-a-sa"]},
+      {"id": "social-studies-g6-handling-2-ka", "code": "8220265260000000", "no": "カ", "kind": "handling", "text": "年表や絵画など、資料の特性に留意した読み取り方についても指導する", "refs": ["social-studies-g6-2-a-shi"]},
+      {"id": "social-studies-g6-handling-2-ki", "code": "8220265270000000", "no": "キ", "kind": "handling", "text": "歴史学習全体を通して、我が国は長い歴史をもち伝統や文化を育んできたこと、我が国の歴史は政治の中心地や世の中の様子などによって幾つかの時期に分けられることに気付くようにする。現在の自分たちの生活と過去の出来事との関わりを考えたり、過去の出来事を基に現在及び将来の発展を考えたりするなど、歴史を学ぶ意味を考えるようにする", "refs": ["social-studies-g6-2-i-a"]}
+    ]},
+    {"id": "social-studies-g6-handling-3", "code": "8220265300000000", "no": "(3)", "kind": "handling", "refs": ["social-studies-g6-3"], "children": [
+      {"id": "social-studies-g6-handling-3-a", "code": "8220265310000000", "no": "ア", "kind": "handling", "text": "我が国の国旗と国歌の意義を理解し、これを尊重する態度を養う。諸外国の国旗と国歌も同様に尊重する態度を養うよう配慮する", "keywords": ["国旗と国歌"], "refs": ["social-studies-g6-3-a-a", "social-studies-g6-3-a-i", "social-studies-g6-3-a-u"]},
+      {"id": "social-studies-g6-handling-3-i", "code": "8220265320000000", "no": "イ", "kind": "handling", "text": "我が国とつながりが深い国から数か国を取り上げる。その際、児童が1か国を選択して調べるよう配慮する", "keywords": ["数か国"], "refs": ["social-studies-g6-3-a-a"]},
+      {"id": "social-studies-g6-handling-3-u", "code": "8220265330000000", "no": "ウ", "kind": "handling", "text": "我が国や諸外国の伝統や文化を尊重しようとする態度を養うよう配慮する", "refs": ["social-studies-g6-3-a-a"]},
+      {"id": "social-studies-g6-handling-3-e", "code": "8220265340000000", "no": "エ", "kind": "handling", "text": "世界の人々と共に生きていくために大切なことや、今後、我が国が国際社会において果たすべき役割などを多角的に考えたり、選択し判断したりできるよう配慮する", "refs": ["social-studies-g6-3-i-a", "social-studies-g6-3-i-i"]},
+      {"id": "social-studies-g6-handling-3-o", "code": "8220265350000000", "no": "オ", "kind": "handling", "text": "網羅的、抽象的な扱いを避けるため、「国際連合の働き」については、ユニセフやユネスコの身近な活動を取り上げる。「我が国の国際協力の様子」については、教育、医療、農業などの分野で世界に貢献している事例の中から選択して取り上げる", "keywords": ["ユニセフやユネスコ", "教育、医療、農業"], "refs": ["social-studies-g6-3-i-i"]}
+    ]}
+  ]
+}

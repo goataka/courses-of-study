@@ -6,6 +6,12 @@
       {"id": "japanese-g12", "grades": [1, 2], "name": "第1学年及び第2学年", "path": "japanese/grade-1-2.json"},
       {"id": "japanese-g34", "grades": [3, 4], "name": "第3学年及び第4学年", "path": "japanese/grade-3-4.json"},
       {"id": "japanese-g56", "grades": [5, 6], "name": "第5学年及び第6学年", "path": "japanese/grade-5-6.json"}
-    ], "kanji": "japanese/kanji.json"}
+    ], "kanji": "japanese/kanji.json"},
+    {"id": "social-studies", "name": "社会", "path": "social-studies/subject.json", "pages": [
+      {"id": "social-studies-g3", "grades": [3], "name": "第3学年", "path": "social-studies/grade-3.json"},
+      {"id": "social-studies-g4", "grades": [4], "name": "第4学年", "path": "social-studies/grade-4.json"},
+      {"id": "social-studies-g5", "grades": [5], "name": "第5学年", "path": "social-studies/grade-5.json"},
+      {"id": "social-studies-g6", "grades": [6], "name": "第6学年", "path": "social-studies/grade-6.json"}
+    ]}
   ]
 }
