@@ -1,0 +1,21 @@
+{
+  "name": "courses-of-study",
+  "private": true,
+  "description": "小学校学習指導要領の学習内容データと、その閲覧用ドキュメント",
+  "type": "module",
+  "packageManager": "pnpm@12.18.0",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "build": "node tools/build.ts",
+    "check": "pnpm run typecheck && pnpm run test && pnpm run check:generated",
+    "check:generated": "node tools/build.ts --check",
+    "test": "node --test \"tools/**/*.test.ts\"",
+    "typecheck": "tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^24.19.2",
+    "typescript": "^7.0.2"
+  }
+}
