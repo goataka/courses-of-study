@@ -1,7 +1,7 @@
 {
   "name": "courses-of-study",
   "private": true,
-  "description": "小学校学習指導要領の学習内容を Markdown で整理したもの",
+  "description": "学習指導要領の学習内容を Markdown で段階ごとに整理したもの",
   "type": "module",
   "packageManager": "pnpm@12.18.0",
   "engines": {
