@@ -12,3 +12,4 @@
 ## 教科一覧
 
 - **[国語](japanese/README.md)**
+- **[社会](social-studies/README.md)**
