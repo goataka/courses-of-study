@@ -29,3 +29,13 @@ test('findMalformedCodes：インラインコードの中の例は検査しな�
   const content = `- **形**：\`**[番号](${BASE}<コード>)**\``;
   assert.deepEqual(findMalformedCodes({ path: 'a.md', content }), []);
 });
+
+test('findMalformedCodes：中学校のコードを受け付け、高等学校のコードを報告する', () => {
+  const content = [
+    `- **コード**：[8350213100000000](${BASE}8350213100000000)`,
+    `- **コード**：[8450000000000000](${BASE}8450000000000000)`,
+  ].join('\n');
+  assert.deepEqual(findMalformedCodes({ path: 'a.md', content }), [
+    'a.md: コードの形が正しくない：8450000000000000',
+  ]);
+});
