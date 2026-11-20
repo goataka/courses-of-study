@@ -1,0 +1,72 @@
+{
+  "id": "science-g4",
+  "subject": "science",
+  "grades": [4],
+  "name": "第4学年",
+  "code": "8260240000000000",
+  "goals": [
+    {"id": "science-g4-goal-1", "code": "8260242100000000", "no": "(1)", "kind": "goal", "title": "物質・エネルギー", "children": [
+      {"id": "science-g4-goal-1-1", "code": "8260242110000000", "no": "①", "kind": "goal", "category": "knowledge", "text": "空気、水、金属の性質、電流の働きについての理解を図る。観察、実験などに関する基本的な技能を身に付ける"},
+      {"id": "science-g4-goal-1-2", "code": "8260242120000000", "no": "②", "kind": "goal", "category": "thinking", "text": "空気、水、金属の性質、電流の働きについて追究する中で、主に既習の内容や生活経験を基に、根拠のある予想や仮説を発想する力を養う", "keywords": ["既習の内容や生活経験", "根拠のある予想や仮説を発想する力"]},
+      {"id": "science-g4-goal-1-3", "code": "8260242130000000", "no": "③", "kind": "goal", "category": "attitude", "text": "空気、水、金属の性質、電流の働きについて追究する中で、主体的に問題解決しようとする態度を養う"}
+    ]},
+    {"id": "science-g4-goal-2", "code": "8260242200000000", "no": "(2)", "kind": "goal", "title": "生命・地球", "children": [
+      {"id": "science-g4-goal-2-1", "code": "8260242210000000", "no": "①", "kind": "goal", "category": "knowledge", "text": "人の体のつくりと運動、動物の活動や植物の成長と環境との関わり、雨水の行方と地面の様子、気象現象、月や星についての理解を図る。観察、実験などに関する基本的な技能を身に付ける"},
+      {"id": "science-g4-goal-2-2", "code": "8260242220000000", "no": "②", "kind": "goal", "category": "thinking", "text": "人の体のつくりと運動、動物の活動や植物の成長と環境との関わり、雨水の行方と地面の様子、気象現象、月や星について追究する中で、主に既習の内容や生活経験を基に、根拠のある予想や仮説を発想する力を養う", "keywords": ["既習の内容や生活経験", "根拠のある予想や仮説を発想する力"]},
+      {"id": "science-g4-goal-2-3", "code": "8260242230000000", "no": "③", "kind": "goal", "category": "attitude", "text": "人の体のつくりと運動、動物の活動や植物の成長と環境との関わり、雨水の行方と地面の様子、気象現象、月や星について追究する中で、生物を愛護する態度や、主体的に問題解決しようとする態度を養う"}
+    ]}
+  ],
+  "contents": [
+    {"id": "science-g4-A", "code": "8260243100000000", "no": "A", "kind": "section", "title": "物質・エネルギー", "children": [
+      {"id": "science-g4-A-1", "code": "8260243110000000", "no": "(1)", "kind": "section", "title": "空気と水の性質", "text": "空気と水の性質について、体積や圧し返す力の変化に着目して、それらと圧す力とを関係付けて調べる", "children": [
+        {"id": "science-g4-A-1-a-a", "code": "8260243111100000", "no": "ア(ア)", "kind": "item", "category": "knowledge", "text": "閉じ込めた空気を圧すと、体積は小さくなるが、圧し返す力は大きくなる", "keywords": ["空気"]},
+        {"id": "science-g4-A-1-a-i", "code": "8260243111200000", "no": "ア(イ)", "kind": "item", "category": "knowledge", "text": "閉じ込めた空気は圧し縮められるが、水は圧し縮められない", "keywords": ["水"]},
+        {"id": "science-g4-A-1-i", "code": "8260243112000000", "no": "イ", "kind": "item", "category": "thinking", "text": "空気と水の性質を追究する中で、既習の内容や生活経験を基に、空気と水の体積や圧し返す力の変化と、圧す力との関係について、根拠のある予想や仮説を発想し、表現する"}
+      ]},
+      {"id": "science-g4-A-2", "code": "8260243120000000", "no": "(2)", "kind": "section", "title": "金属、水、空気と温度", "text": "金属、水、空気の性質について、体積や状態の変化、熱の伝わり方に着目して、それらと温度の変化とを関係付けて調べる", "children": [
+        {"id": "science-g4-A-2-a-a", "code": "8260243121100000", "no": "ア(ア)", "kind": "item", "category": "knowledge", "text": "金属、水、空気は、温めたり冷やしたりすると体積が変わるが、その程度には違いがある", "keywords": ["体積"]},
+        {"id": "science-g4-A-2-a-i", "code": "8260243121200000", "no": "ア(イ)", "kind": "item", "category": "knowledge", "text": "金属は熱せられた部分から順に温まるが、水や空気は熱せられた部分が移動して全体が温まる"},
+        {"id": "science-g4-A-2-a-u", "code": "8260243121300000", "no": "ア(ウ)", "kind": "item", "category": "knowledge", "text": "水は、温度によって水蒸気や氷に変わる。水が氷になると体積が増える", "keywords": ["水蒸気や氷"]},
+        {"id": "science-g4-A-2-i", "code": "8260243122000000", "no": "イ", "kind": "item", "category": "thinking", "text": "金属、水、空気の性質を追究する中で、既習の内容や生活経験を基に、金属、水、空気の温度を変化させたときの体積や状態の変化、熱の伝わり方について、根拠のある予想や仮説を発想し、表現する"}
+      ]},
+      {"id": "science-g4-A-3", "code": "8260243130000000", "no": "(3)", "kind": "section", "title": "電流の働き", "text": "電流の働きについて、電流の大きさや向きと、乾電池につないだ物の様子に着目して、それらを関係付けて調べる", "children": [
+        {"id": "science-g4-A-3-a-a", "code": "8260243131100000", "no": "ア(ア)", "kind": "item", "category": "knowledge", "text": "乾電池の数やつなぎ方を変えると、電流の大きさや向きが変わり、豆電球の明るさやモーターの回り方が変わる", "keywords": ["乾電池の数やつなぎ方", "電流"]},
+        {"id": "science-g4-A-3-i", "code": "8260243132000000", "no": "イ", "kind": "item", "category": "thinking", "text": "電流の働きを追究する中で、既習の内容や生活経験を基に、電流の大きさや向きと、乾電池につないだ物の様子との関係について、根拠のある予想や仮説を発想し、表現する"}
+      ]}
+    ]},
+    {"id": "science-g4-B", "code": "8260243200000000", "no": "B", "kind": "section", "title": "生命・地球", "children": [
+      {"id": "science-g4-B-1", "code": "8260243210000000", "no": "(1)", "kind": "section", "title": "人の体のつくりと運動", "text": "人や他の動物について、骨や筋肉のつくりと働きに着目して、それらを関係付けて調べる", "children": [
+        {"id": "science-g4-B-1-a-a", "code": "8260243211100000", "no": "ア(ア)", "kind": "item", "category": "knowledge", "text": "人の体には骨と筋肉がある", "keywords": ["骨と筋肉"]},
+        {"id": "science-g4-B-1-a-i", "code": "8260243211200000", "no": "ア(イ)", "kind": "item", "category": "knowledge", "text": "人が体を動かすことができるのは、骨、筋肉の働きによる"},
+        {"id": "science-g4-B-1-i", "code": "8260243212000000", "no": "イ", "kind": "item", "category": "thinking", "text": "人や他の動物を追究する中で、既習の内容や生活経験を基に、人や他の動物の骨や筋肉のつくりと働きについて、根拠のある予想や仮説を発想し、表現する"}
+      ]},
+      {"id": "science-g4-B-2", "code": "8260243220000000", "no": "(2)", "kind": "section", "title": "季節と生物", "text": "身近な動物や植物について、探したり育てたりする中で、動物の活動や植物の成長と季節の変化に着目して、それらを関係付けて調べる", "children": [
+        {"id": "science-g4-B-2-a-a", "code": "8260243221100000", "no": "ア(ア)", "kind": "item", "category": "knowledge", "text": "動物の活動は、暖かい季節、寒い季節などによって違いがある", "keywords": ["動物の活動"]},
+        {"id": "science-g4-B-2-a-i", "code": "8260243221200000", "no": "ア(イ)", "kind": "item", "category": "knowledge", "text": "植物の成長は、暖かい季節、寒い季節などによって違いがある", "keywords": ["植物の成長"]},
+        {"id": "science-g4-B-2-i", "code": "8260243222000000", "no": "イ", "kind": "item", "category": "thinking", "text": "身近な動物や植物を追究する中で、既習の内容や生活経験を基に、季節ごとの動物の活動や植物の成長の変化について、根拠のある予想や仮説を発想し、表現する"}
+      ]},
+      {"id": "science-g4-B-3", "code": "8260243230000000", "no": "(3)", "kind": "section", "title": "雨水の行方と地面の様子", "text": "雨水の行方と地面の様子について、流れ方やしみ込み方に着目して、それらと地面の傾きや土の粒の大きさとを関係付けて調べる", "children": [
+        {"id": "science-g4-B-3-a-a", "code": "8260243231100000", "no": "ア(ア)", "kind": "item", "category": "knowledge", "text": "水は、高い場所から低い場所へと流れて集まる", "keywords": ["高い場所から低い場所"]},
+        {"id": "science-g4-B-3-a-i", "code": "8260243231200000", "no": "ア(イ)", "kind": "item", "category": "knowledge", "text": "水のしみ込み方は、土の粒の大きさによって違いがある", "keywords": ["土の粒の大きさ"]},
+        {"id": "science-g4-B-3-i", "code": "8260243232000000", "no": "イ", "kind": "item", "category": "thinking", "text": "雨水の行方と地面の様子を追究する中で、既習の内容や生活経験を基に、雨水の流れ方やしみ込み方と、地面の傾きや土の粒の大きさとの関係について、根拠のある予想や仮説を発想し、表現する"}
+      ]},
+      {"id": "science-g4-B-4", "code": "8260243240000000", "no": "(4)", "kind": "section", "title": "天気の様子", "text": "天気や自然界の水の様子について、気温や水の行方に着目して、それらと天気の様子や水の状態変化とを関係付けて調べる", "children": [
+        {"id": "science-g4-B-4-a-a", "code": "8260243241100000", "no": "ア(ア)", "kind": "item", "category": "knowledge", "text": "天気によって、1日の気温の変化の仕方に違いがある", "keywords": ["1日の気温の変化"]},
+        {"id": "science-g4-B-4-a-i", "code": "8260243241200000", "no": "ア(イ)", "kind": "item", "category": "knowledge", "text": "水は、水面や地面などから蒸発し、水蒸気になって空気中に含まれていく。空気中の水蒸気は、結露して再び水になって現れることがある", "keywords": ["蒸発", "結露"]},
+        {"id": "science-g4-B-4-i", "code": "8260243242000000", "no": "イ", "kind": "item", "category": "thinking", "text": "天気や自然界の水の様子を追究する中で、既習の内容や生活経験を基に、天気の様子や水の状態変化と、気温や水の行方との関係について、根拠のある予想や仮説を発想し、表現する"}
+      ]},
+      {"id": "science-g4-B-5", "code": "8260243250000000", "no": "(5)", "kind": "section", "title": "月と星", "text": "月や星の特徴について、位置の変化や時間の経過に着目して、それらを関係付けて調べる", "children": [
+        {"id": "science-g4-B-5-a-a", "code": "8260243251100000", "no": "ア(ア)", "kind": "item", "category": "knowledge", "text": "月は日によって形が変わって見え、1日のうちでも時刻によって位置が変わる", "keywords": ["月"]},
+        {"id": "science-g4-B-5-a-i", "code": "8260243251200000", "no": "ア(イ)", "kind": "item", "category": "knowledge", "text": "空には、明るさや色の違う星がある", "keywords": ["星"]},
+        {"id": "science-g4-B-5-a-u", "code": "8260243251300000", "no": "ア(ウ)", "kind": "item", "category": "knowledge", "text": "星の集まりは、1日のうちでも時刻によって、並び方は変わらないが、位置が変わる"},
+        {"id": "science-g4-B-5-i", "code": "8260243252000000", "no": "イ", "kind": "item", "category": "thinking", "text": "月や星の特徴を追究する中で、既習の内容や生活経験を基に、月や星の位置の変化と時間の経過との関係について、根拠のある予想や仮説を発想し、表現する"}
+      ]}
+    ]}
+  ],
+  "handling": [
+    {"id": "science-g4-handling-1", "code": "8260245100000000", "no": "(1)", "kind": "handling", "text": "直列つなぎと並列つなぎを扱う", "keywords": ["直列つなぎ", "並列つなぎ"], "refs": ["science-g4-A-3-a-a"]},
+    {"id": "science-g4-handling-2", "code": "8260245200000000", "no": "(2)", "kind": "handling", "text": "2種類以上のものづくりを行う", "keywords": ["2種類以上のものづくり"], "refs": ["science-g4-A"]},
+    {"id": "science-g4-handling-3", "code": "8260245300000000", "no": "(3)", "kind": "handling", "text": "関節の働きを扱う", "keywords": ["関節"], "refs": ["science-g4-B-1-a-i"]},
+    {"id": "science-g4-handling-4", "code": "8260245400000000", "no": "(4)", "kind": "handling", "text": "1年を通じて、動物の活動や植物の成長をそれぞれ2種類以上観察する", "keywords": ["2種類以上"], "refs": ["science-g4-B-2"]}
+  ]
+}

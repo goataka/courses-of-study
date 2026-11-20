@@ -1,0 +1,71 @@
+{
+  "id": "science-g3",
+  "subject": "science",
+  "grades": [3],
+  "name": "第3学年",
+  "code": "8260230000000000",
+  "goals": [
+    {"id": "science-g3-goal-1", "code": "8260232100000000", "no": "(1)", "kind": "goal", "title": "物質・エネルギー", "children": [
+      {"id": "science-g3-goal-1-1", "code": "8260232110000000", "no": "①", "kind": "goal", "category": "knowledge", "text": "物の性質、風とゴムの力の働き、光と音の性質、磁石の性質、電気の回路についての理解を図る。観察、実験などに関する基本的な技能を身に付ける"},
+      {"id": "science-g3-goal-1-2", "code": "8260232120000000", "no": "②", "kind": "goal", "category": "thinking", "text": "物の性質、風とゴムの力の働き、光と音の性質、磁石の性質、電気の回路について追究する中で、主に差異点や共通点を基に、問題を見いだす力を養う", "keywords": ["差異点や共通点", "問題を見いだす力"]},
+      {"id": "science-g3-goal-1-3", "code": "8260232130000000", "no": "③", "kind": "goal", "category": "attitude", "text": "物の性質、風とゴムの力の働き、光と音の性質、磁石の性質、電気の回路について追究する中で、主体的に問題解決しようとする態度を養う"}
+    ]},
+    {"id": "science-g3-goal-2", "code": "8260232200000000", "no": "(2)", "kind": "goal", "title": "生命・地球", "children": [
+      {"id": "science-g3-goal-2-1", "code": "8260232210000000", "no": "①", "kind": "goal", "category": "knowledge", "text": "身の回りの生物、太陽と地面の様子についての理解を図る。観察、実験などに関する基本的な技能を身に付ける"},
+      {"id": "science-g3-goal-2-2", "code": "8260232220000000", "no": "②", "kind": "goal", "category": "thinking", "text": "身の回りの生物、太陽と地面の様子について追究する中で、主に差異点や共通点を基に、問題を見いだす力を養う", "keywords": ["差異点や共通点", "問題を見いだす力"]},
+      {"id": "science-g3-goal-2-3", "code": "8260232230000000", "no": "③", "kind": "goal", "category": "attitude", "text": "身の回りの生物、太陽と地面の様子について追究する中で、生物を愛護する態度や、主体的に問題解決しようとする態度を養う"}
+    ]}
+  ],
+  "contents": [
+    {"id": "science-g3-A", "code": "8260233100000000", "no": "A", "kind": "section", "title": "物質・エネルギー", "children": [
+      {"id": "science-g3-A-1", "code": "8260233110000000", "no": "(1)", "kind": "section", "title": "物と重さ", "text": "物の性質について、形や体積に着目して、重さを比較しながら調べる", "children": [
+        {"id": "science-g3-A-1-a-a", "code": "8260233111100000", "no": "ア(ア)", "kind": "item", "category": "knowledge", "text": "物は、形が変わっても重さは変わらない", "keywords": ["形", "重さ"]},
+        {"id": "science-g3-A-1-a-i", "code": "8260233111200000", "no": "ア(イ)", "kind": "item", "category": "knowledge", "text": "物は、体積が同じでも重さは違うことがある", "keywords": ["体積"]},
+        {"id": "science-g3-A-1-i", "code": "8260233112000000", "no": "イ", "kind": "item", "category": "thinking", "text": "物の形や体積と重さとの関係を追究する中で、差異点や共通点を基に、物の性質についての問題を見いだし、表現する"}
+      ]},
+      {"id": "science-g3-A-2", "code": "8260233120000000", "no": "(2)", "kind": "section", "title": "風とゴムの力の働き", "text": "風とゴムの力の働きについて、力と物の動く様子に着目して、それらを比較しながら調べる", "children": [
+        {"id": "science-g3-A-2-a-a", "code": "8260233121100000", "no": "ア(ア)", "kind": "item", "category": "knowledge", "text": "風の力は、物を動かすことができる。風の力の大きさを変えると、物が動く様子も変わる", "keywords": ["風の力"]},
+        {"id": "science-g3-A-2-a-i", "code": "8260233121200000", "no": "ア(イ)", "kind": "item", "category": "knowledge", "text": "ゴムの力は、物を動かすことができる。ゴムの力の大きさを変えると、物が動く様子も変わる", "keywords": ["ゴムの力"]},
+        {"id": "science-g3-A-2-i", "code": "8260233122000000", "no": "イ", "kind": "item", "category": "thinking", "text": "風とゴムの力で物が動く様子を追究する中で、差異点や共通点を基に、風とゴムの力の働きについての問題を見いだし、表現する"}
+      ]},
+      {"id": "science-g3-A-3", "code": "8260233130000000", "no": "(3)", "kind": "section", "title": "光と音の性質", "text": "光と音の性質について、光を当てたときの明るさや暖かさ、音を出したときの震え方に着目して、光の強さや音の大きさを変えたときの違いを比較しながら調べる", "children": [
+        {"id": "science-g3-A-3-a-a", "code": "8260233131100000", "no": "ア(ア)", "kind": "item", "category": "knowledge", "text": "日光は直進し、集めたり反射させたりできる", "keywords": ["日光"]},
+        {"id": "science-g3-A-3-a-i", "code": "8260233131200000", "no": "ア(イ)", "kind": "item", "category": "knowledge", "text": "物に日光を当てると、物の明るさや暖かさが変わる", "keywords": ["明るさや暖かさ"]},
+        {"id": "science-g3-A-3-a-u", "code": "8260233131300000", "no": "ア(ウ)", "kind": "item", "category": "knowledge", "text": "物から音が出たり伝わったりするとき、物は震えている。音の大きさが変わるとき、物の震え方が変わる", "keywords": ["音"]},
+        {"id": "science-g3-A-3-i", "code": "8260233132000000", "no": "イ", "kind": "item", "category": "thinking", "text": "光を当てたときの明るさや暖かさの様子、音を出したときの震え方の様子を追究する中で、差異点や共通点を基に、光と音の性質についての問題を見いだし、表現する"}
+      ]},
+      {"id": "science-g3-A-4", "code": "8260233140000000", "no": "(4)", "kind": "section", "title": "磁石の性質", "text": "磁石の性質について、磁石を身の回りの物に近付けたときの様子に着目して、それらを比較しながら調べる", "children": [
+        {"id": "science-g3-A-4-a-a", "code": "8260233141100000", "no": "ア(ア)", "kind": "item", "category": "knowledge", "text": "磁石に引き付けられる物と引き付けられない物がある。磁石に近付けると磁石になる物がある", "keywords": ["磁石"]},
+        {"id": "science-g3-A-4-a-i", "code": "8260233141200000", "no": "ア(イ)", "kind": "item", "category": "knowledge", "text": "磁石の異極は引き合い、同極は退け合う", "keywords": ["異極", "同極"]},
+        {"id": "science-g3-A-4-i", "code": "8260233142000000", "no": "イ", "kind": "item", "category": "thinking", "text": "磁石を身の回りの物に近付けたときの様子を追究する中で、差異点や共通点を基に、磁石の性質についての問題を見いだし、表現する"}
+      ]},
+      {"id": "science-g3-A-5", "code": "8260233150000000", "no": "(5)", "kind": "section", "title": "電気の通り道", "text": "電気の回路について、乾電池と豆電球などのつなぎ方と、乾電池につないだ物の様子に着目して、電気を通すときと通さないときのつなぎ方を比較しながら調べる", "children": [
+        {"id": "science-g3-A-5-a-a", "code": "8260233151100000", "no": "ア(ア)", "kind": "item", "category": "knowledge", "text": "電気を通すつなぎ方と、通さないつなぎ方がある", "keywords": ["つなぎ方"]},
+        {"id": "science-g3-A-5-a-i", "code": "8260233151200000", "no": "ア(イ)", "kind": "item", "category": "knowledge", "text": "電気を通す物と、通さない物がある", "keywords": ["電気を通す物"]},
+        {"id": "science-g3-A-5-i", "code": "8260233152000000", "no": "イ", "kind": "item", "category": "thinking", "text": "乾電池と豆電球などのつなぎ方と、乾電池につないだ物の様子を追究する中で、差異点や共通点を基に、電気の回路についての問題を見いだし、表現する"}
+      ]}
+    ]},
+    {"id": "science-g3-B", "code": "8260233200000000", "no": "B", "kind": "section", "title": "生命・地球", "children": [
+      {"id": "science-g3-B-1", "code": "8260233210000000", "no": "(1)", "kind": "section", "title": "身の回りの生物", "text": "身の回りの生物について、探したり育てたりする中で、それらの様子や周辺の環境、成長の過程や体のつくりに着目して、それらを比較しながら調べる", "children": [
+        {"id": "science-g3-B-1-a-a", "code": "8260233211100000", "no": "ア(ア)", "kind": "item", "category": "knowledge", "text": "生物は、色、形、大きさなど、姿に違いがある。周辺の環境と関わって生きている", "keywords": ["環境"]},
+        {"id": "science-g3-B-1-a-i", "code": "8260233211200000", "no": "ア(イ)", "kind": "item", "category": "knowledge", "text": "昆虫の育ち方には一定の順序がある。成虫の体は頭、胸、腹からできている", "keywords": ["昆虫", "頭、胸、腹"]},
+        {"id": "science-g3-B-1-a-u", "code": "8260233211300000", "no": "ア(ウ)", "kind": "item", "category": "knowledge", "text": "植物の育ち方には一定の順序がある。その体は根、茎、葉からできている", "keywords": ["植物", "根、茎、葉"]},
+        {"id": "science-g3-B-1-i", "code": "8260233212000000", "no": "イ", "kind": "item", "category": "thinking", "text": "身の回りの生物の様子を追究する中で、差異点や共通点を基に、身の回りの生物と環境との関わり、昆虫や植物の成長のきまりや体のつくりについての問題を見いだし、表現する"}
+      ]},
+      {"id": "science-g3-B-2", "code": "8260233220000000", "no": "(2)", "kind": "section", "title": "太陽と地面の様子", "text": "太陽と地面の様子との関係について、日なたと日陰の様子に着目して、それらを比較しながら調べる", "children": [
+        {"id": "science-g3-B-2-a-a", "code": "8260233221100000", "no": "ア(ア)", "kind": "item", "category": "knowledge", "text": "日陰は太陽の光を遮るとでき、日陰の位置は太陽の位置の変化によって変わる", "keywords": ["日陰", "太陽の位置"]},
+        {"id": "science-g3-B-2-a-i", "code": "8260233221200000", "no": "ア(イ)", "kind": "item", "category": "knowledge", "text": "地面は太陽によって暖められ、日なたと日陰では地面の暖かさや湿り気に違いがある", "keywords": ["日なたと日陰"]},
+        {"id": "science-g3-B-2-i", "code": "8260233222000000", "no": "イ", "kind": "item", "category": "thinking", "text": "日なたと日陰の様子を追究する中で、差異点や共通点を基に、太陽と地面の様子との関係についての問題を見いだし、表現する"}
+      ]}
+    ]}
+  ],
+  "handling": [
+    {"id": "science-g3-handling-1", "code": "8260235100000000", "no": "(1)", "kind": "handling", "text": "3種類以上のものづくりを行う", "keywords": ["3種類以上のものづくり"], "refs": ["science-g3-A"]},
+    {"id": "science-g3-handling-2", "code": "8260235200000000", "no": "(2)", "kind": "handling", "text": "磁石が物を引き付ける力は、磁石と物の距離によって変わることにも触れる", "refs": ["science-g3-A-4-a-a"]},
+    {"id": "science-g3-handling-3", "code": "8260235300000000", "no": "(3)", "kind": "handling", "refs": ["science-g3-B-1"], "children": [
+      {"id": "science-g3-handling-3-a", "code": "8260235310000000", "no": "ア", "kind": "handling", "text": "飼育、栽培を通して行う", "keywords": ["飼育、栽培"], "refs": ["science-g3-B-1-a-i", "science-g3-B-1-a-u"]},
+      {"id": "science-g3-handling-3-i", "code": "8260235320000000", "no": "イ", "kind": "handling", "text": "「植物の育ち方」については、夏生一年生の双子葉植物を扱う", "keywords": ["夏生一年生の双子葉植物"], "refs": ["science-g3-B-1-a-u"]}
+    ]},
+    {"id": "science-g3-handling-4", "code": "8260235400000000", "no": "(4)", "kind": "handling", "text": "「太陽の位置の変化」については、東から南、西へと変化することを取り扱う。太陽の位置を調べるときの方位は、東、西、南、北を扱う", "keywords": ["東から南、西へ", "東、西、南、北"], "refs": ["science-g3-B-2-a-a"]}
+  ]
+}

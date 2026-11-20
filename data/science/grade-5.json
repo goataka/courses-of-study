@@ -1,0 +1,74 @@
+{
+  "id": "science-g5",
+  "subject": "science",
+  "grades": [5],
+  "name": "第5学年",
+  "code": "8260250000000000",
+  "goals": [
+    {"id": "science-g5-goal-1", "code": "8260252100000000", "no": "(1)", "kind": "goal", "title": "物質・エネルギー", "children": [
+      {"id": "science-g5-goal-1-1", "code": "8260252110000000", "no": "①", "kind": "goal", "category": "knowledge", "text": "物の溶け方、振り子の運動、電流がつくる磁力についての理解を図る。観察、実験などに関する基本的な技能を身に付ける"},
+      {"id": "science-g5-goal-1-2", "code": "8260252120000000", "no": "②", "kind": "goal", "category": "thinking", "text": "物の溶け方、振り子の運動、電流がつくる磁力について追究する中で、主に予想や仮説を基に、解決の方法を発想する力を養う", "keywords": ["予想や仮説", "解決の方法を発想する力"]},
+      {"id": "science-g5-goal-1-3", "code": "8260252130000000", "no": "③", "kind": "goal", "category": "attitude", "text": "物の溶け方、振り子の運動、電流がつくる磁力について追究する中で、主体的に問題解決しようとする態度を養う"}
+    ]},
+    {"id": "science-g5-goal-2", "code": "8260252200000000", "no": "(2)", "kind": "goal", "title": "生命・地球", "children": [
+      {"id": "science-g5-goal-2-1", "code": "8260252210000000", "no": "①", "kind": "goal", "category": "knowledge", "text": "生命の連続性、流れる水の働き、気象現象の規則性についての理解を図る。観察、実験などに関する基本的な技能を身に付ける"},
+      {"id": "science-g5-goal-2-2", "code": "8260252220000000", "no": "②", "kind": "goal", "category": "thinking", "text": "生命の連続性、流れる水の働き、気象現象の規則性について追究する中で、主に予想や仮説を基に、解決の方法を発想する力を養う", "keywords": ["予想や仮説", "解決の方法を発想する力"]},
+      {"id": "science-g5-goal-2-3", "code": "8260252230000000", "no": "③", "kind": "goal", "category": "attitude", "text": "生命の連続性、流れる水の働き、気象現象の規則性について追究する中で、生命を尊重する態度や、主体的に問題解決しようとする態度を養う"}
+    ]}
+  ],
+  "contents": [
+    {"id": "science-g5-A", "code": "8260253100000000", "no": "A", "kind": "section", "title": "物質・エネルギー", "children": [
+      {"id": "science-g5-A-1", "code": "8260253110000000", "no": "(1)", "kind": "section", "title": "物の溶け方", "text": "物の溶け方について、溶ける量や様子に着目して、水の温度や量などの条件を制御しながら調べる", "children": [
+        {"id": "science-g5-A-1-a-a", "code": "8260253111100000", "no": "ア(ア)", "kind": "item", "category": "knowledge", "text": "物が水に溶けても、水と物とを合わせた重さは変わらない", "keywords": ["水と物とを合わせた重さ"]},
+        {"id": "science-g5-A-1-a-i", "code": "8260253111200000", "no": "ア(イ)", "kind": "item", "category": "knowledge", "text": "物が水に溶ける量には、限度がある", "keywords": ["限度"]},
+        {"id": "science-g5-A-1-a-u", "code": "8260253111300000", "no": "ア(ウ)", "kind": "item", "category": "knowledge", "text": "物が水に溶ける量は、水の温度や量、溶ける物によって違う。この性質を利用して、溶けている物を取り出すことができる"},
+        {"id": "science-g5-A-1-i", "code": "8260253112000000", "no": "イ", "kind": "item", "category": "thinking", "text": "物の溶け方を追究する中で、物の溶け方の規則性についての予想や仮説を基に、解決の方法を発想し、表現する"}
+      ]},
+      {"id": "science-g5-A-2", "code": "8260253120000000", "no": "(2)", "kind": "section", "title": "振り子の運動", "text": "振り子の運動の規則性について、振り子が1往復する時間に着目して、おもりの重さや振り子の長さなどの条件を制御しながら調べる", "children": [
+        {"id": "science-g5-A-2-a-a", "code": "8260253121100000", "no": "ア(ア)", "kind": "item", "category": "knowledge", "text": "振り子が1往復する時間は、おもりの重さなどによっては変わらないが、振り子の長さによって変わる", "keywords": ["振り子", "振り子の長さ"]},
+        {"id": "science-g5-A-2-i", "code": "8260253122000000", "no": "イ", "kind": "item", "category": "thinking", "text": "振り子の運動の規則性を追究する中で、振り子が1往復する時間に関係する条件についての予想や仮説を基に、解決の方法を発想し、表現する"}
+      ]},
+      {"id": "science-g5-A-3", "code": "8260253130000000", "no": "(3)", "kind": "section", "title": "電流がつくる磁力", "text": "電流がつくる磁力について、電流の大きさや向き、コイルの巻数などに着目して、それらの条件を制御しながら調べる", "children": [
+        {"id": "science-g5-A-3-a-a", "code": "8260253131100000", "no": "ア(ア)", "kind": "item", "category": "knowledge", "text": "電流の流れているコイルは、鉄心を磁化する働きがある。電流の向きが変わると、電磁石の極も変わる", "keywords": ["コイル", "電磁石の極"]},
+        {"id": "science-g5-A-3-a-i", "code": "8260253131200000", "no": "ア(イ)", "kind": "item", "category": "knowledge", "text": "電磁石の強さは、電流の大きさや導線の巻数によって変わる", "keywords": ["電磁石の強さ"]},
+        {"id": "science-g5-A-3-i", "code": "8260253132000000", "no": "イ", "kind": "item", "category": "thinking", "text": "電流がつくる磁力を追究する中で、電流がつくる磁力の強さに関係する条件についての予想や仮説を基に、解決の方法を発想し、表現する"}
+      ]}
+    ]},
+    {"id": "science-g5-B", "code": "8260253200000000", "no": "B", "kind": "section", "title": "生命・地球", "children": [
+      {"id": "science-g5-B-1", "code": "8260253210000000", "no": "(1)", "kind": "section", "title": "植物の発芽、成長、結実", "text": "植物の育ち方について、発芽、成長、結実の様子に着目して、それらに関わる条件を制御しながら調べる", "children": [
+        {"id": "science-g5-B-1-a-a", "code": "8260253211100000", "no": "ア(ア)", "kind": "item", "category": "knowledge", "text": "植物は、種子の中の養分を基にして発芽する", "keywords": ["種子の中の養分"]},
+        {"id": "science-g5-B-1-a-i", "code": "8260253211200000", "no": "ア(イ)", "kind": "item", "category": "knowledge", "text": "植物の発芽には、水、空気、温度が関係している", "keywords": ["発芽"]},
+        {"id": "science-g5-B-1-a-u", "code": "8260253211300000", "no": "ア(ウ)", "kind": "item", "category": "knowledge", "text": "植物の成長には、日光や肥料などが関係している", "keywords": ["成長"]},
+        {"id": "science-g5-B-1-a-e", "code": "8260253211400000", "no": "ア(エ)", "kind": "item", "category": "knowledge", "text": "花にはおしべやめしべなどがあり、花粉がめしべの先に付くとめしべのもとが実になり、実の中に種子ができる", "keywords": ["おしべやめしべ", "花粉"]},
+        {"id": "science-g5-B-1-i", "code": "8260253212000000", "no": "イ", "kind": "item", "category": "thinking", "text": "植物の育ち方を追究する中で、植物の発芽、成長、結実と、それらに関わる条件についての予想や仮説を基に、解決の方法を発想し、表現する"}
+      ]},
+      {"id": "science-g5-B-2", "code": "8260253220000000", "no": "(2)", "kind": "section", "title": "動物の誕生", "text": "動物の発生や成長について、魚を育てたり人の発生についての資料を活用したりする中で、卵や胎児の様子に着目して、時間の経過と関係付けて調べる", "children": [
+        {"id": "science-g5-B-2-a-a", "code": "8260253221100000", "no": "ア(ア)", "kind": "item", "category": "knowledge", "text": "魚には雌雄があり、生まれた卵は日がたつにつれて中の様子が変化してかえる", "keywords": ["魚"]},
+        {"id": "science-g5-B-2-a-i", "code": "8260253221200000", "no": "ア(イ)", "kind": "item", "category": "knowledge", "text": "人は、母体内で成長して生まれる", "keywords": ["人"]},
+        {"id": "science-g5-B-2-i", "code": "8260253222000000", "no": "イ", "kind": "item", "category": "thinking", "text": "動物の発生や成長を追究する中で、動物の発生や成長の様子と経過についての予想や仮説を基に、解決の方法を発想し、表現する"}
+      ]},
+      {"id": "science-g5-B-3", "code": "8260253230000000", "no": "(3)", "kind": "section", "title": "流れる水の働きと土地の変化", "text": "流れる水の働きと土地の変化について、水の速さや量に着目して、それらの条件を制御しながら調べる", "children": [
+        {"id": "science-g5-B-3-a-a", "code": "8260253231100000", "no": "ア(ア)", "kind": "item", "category": "knowledge", "text": "流れる水には、土地を侵食したり、石や土などを運搬したり堆積させたりする働きがある", "keywords": ["侵食", "運搬", "堆積"]},
+        {"id": "science-g5-B-3-a-i", "code": "8260253231200000", "no": "ア(イ)", "kind": "item", "category": "knowledge", "text": "川の上流と下流によって、川原の石の大きさや形に違いがある", "keywords": ["上流と下流"]},
+        {"id": "science-g5-B-3-a-u", "code": "8260253231300000", "no": "ア(ウ)", "kind": "item", "category": "knowledge", "text": "雨の降り方によって、流れる水の量や速さは変わり、増水により土地の様子が大きく変化する場合がある", "keywords": ["増水"]},
+        {"id": "science-g5-B-3-i", "code": "8260253232000000", "no": "イ", "kind": "item", "category": "thinking", "text": "流れる水の働きを追究する中で、流れる水の働きと土地の変化との関係についての予想や仮説を基に、解決の方法を発想し、表現する"}
+      ]},
+      {"id": "science-g5-B-4", "code": "8260253240000000", "no": "(4)", "kind": "section", "title": "天気の変化", "text": "天気の変化の仕方について、雲の様子を観測したり、映像などの気象情報を活用したりする中で、雲の量や動きに着目して、それらと天気の変化とを関係付けて調べる", "children": [
+        {"id": "science-g5-B-4-a-a", "code": "8260253241100000", "no": "ア(ア)", "kind": "item", "category": "knowledge", "text": "天気の変化は、雲の量や動きと関係がある", "keywords": ["雲の量や動き"]},
+        {"id": "science-g5-B-4-a-i", "code": "8260253241200000", "no": "ア(イ)", "kind": "item", "category": "knowledge", "text": "天気の変化は、映像などの気象情報を用いて予想できる", "keywords": ["気象情報"]},
+        {"id": "science-g5-B-4-i", "code": "8260253242000000", "no": "イ", "kind": "item", "category": "thinking", "text": "天気の変化の仕方を追究する中で、天気の変化の仕方と雲の量や動きとの関係についての予想や仮説を基に、解決の方法を発想し、表現する"}
+      ]}
+    ]}
+  ],
+  "handling": [
+    {"id": "science-g5-handling-1", "code": "8260255100000000", "no": "(1)", "kind": "handling", "text": "2種類以上のものづくりを行う", "keywords": ["2種類以上のものづくり"], "refs": ["science-g5-A"]},
+    {"id": "science-g5-handling-2", "code": "8260255200000000", "no": "(2)", "kind": "handling", "text": "水溶液の中では、溶けている物が均一に広がることにも触れる", "keywords": ["水溶液"], "refs": ["science-g5-A-1"]},
+    {"id": "science-g5-handling-3", "code": "8260255300000000", "no": "(3)", "kind": "handling", "refs": ["science-g5-B-1"], "children": [
+      {"id": "science-g5-handling-3-a", "code": "8260255310000000", "no": "ア", "kind": "handling", "text": "「種子の中の養分」については、でんぷんを扱う", "keywords": ["でんぷん"], "refs": ["science-g5-B-1-a-a"]},
+      {"id": "science-g5-handling-3-i", "code": "8260255320000000", "no": "イ", "kind": "handling", "text": "おしべ、めしべ、がく、花びらを扱う。受粉については、風や昆虫などが関係していることにも触れる", "keywords": ["おしべ、めしべ、がく、花びら", "受粉"], "refs": ["science-g5-B-1-a-e"]}
+    ]},
+    {"id": "science-g5-handling-4", "code": "8260255400000000", "no": "(4)", "kind": "handling", "text": "人の受精に至る過程は取り扱わない", "refs": ["science-g5-B-2-a-i"]},
+    {"id": "science-g5-handling-5", "code": "8260255500000000", "no": "(5)", "kind": "handling", "text": "自然災害についても触れる", "keywords": ["自然災害"], "refs": ["science-g5-B-3-a-u"]},
+    {"id": "science-g5-handling-6", "code": "8260255600000000", "no": "(6)", "kind": "handling", "text": "台風の進路による天気の変化や、台風と降雨との関係、それに伴う自然災害についても触れる", "keywords": ["台風"], "refs": ["science-g5-B-4-a-i"]}
+  ]
+}
