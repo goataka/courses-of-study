@@ -68,3 +68,11 @@ test('findBrokenLinks：外部へのリンクは検査しない', () => {
   };
   assert.deepEqual(findBrokenLinks([file], new Set(['README.md'])), []);
 });
+
+test('findBrokenLinks：インラインコードの中のリンクは検査しない', () => {
+  const file: MarkdownFile = {
+    path: 'README.md',
+    content: '- **形**：`[番号](コードのURL)`\n',
+  };
+  assert.deepEqual(findBrokenLinks([file], new Set(['README.md'])), []);
+});
