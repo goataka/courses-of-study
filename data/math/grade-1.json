@@ -1,0 +1,72 @@
+{
+  "id": "math-g1",
+  "subject": "math",
+  "grades": [1],
+  "name": "第1学年",
+  "code": "8250210000000000",
+  "goals": [
+    {"id": "math-g1-goal-1", "code": "8250212100000000", "no": "(1)", "kind": "goal", "category": "knowledge", "text": "数の概念と表し方、計算の意味を理解する。量、図形、数量の関係の理解の基礎となる経験を重ね、数量や図形の感覚を豊かにする。加法と減法の計算、形の構成、身の回りの量の大きさ比べ、簡単な絵や図への表現などの技能を身に付ける"},
+    {"id": "math-g1-goal-2", "code": "8250212200000000", "no": "(2)", "kind": "goal", "category": "thinking", "text": "ものの数に着目し、具体物や図を用いて数の数え方や計算の仕方を考える力を養う。ものの形に着目して特徴を捉え、具体的な操作を通して形の構成を考える力を養う。身の回りのものの特徴を量に着目して捉え、量の大きさの比べ方を考える力を養う。データの個数に着目して身の回りの事象の特徴を捉える力を養う"},
+    {"id": "math-g1-goal-3", "code": "8250212300000000", "no": "(3)", "kind": "goal", "category": "attitude", "text": "数量や図形に親しみ、算数で学んだことのよさや楽しさを感じながら学ぶ態度を養う"}
+  ],
+  "contents": [
+    {"id": "math-g1-A", "code": "8250213100000000", "no": "A", "kind": "section", "title": "数と計算", "children": [
+      {"id": "math-g1-A-1", "code": "8250213110000000", "no": "(1)", "kind": "section", "title": "数の構成と表し方", "children": [
+        {"id": "math-g1-A-1-a-a", "code": "8250213111100000", "no": "ア(ア)", "kind": "item", "category": "knowledge", "text": "ものとものを対応させて、ものの個数を比べる", "keywords": ["個数"]},
+        {"id": "math-g1-A-1-a-i", "code": "8250213111200000", "no": "ア(イ)", "kind": "item", "category": "knowledge", "text": "個数や順番を正しく数え、表す", "keywords": ["順番"]},
+        {"id": "math-g1-A-1-a-u", "code": "8250213111300000", "no": "ア(ウ)", "kind": "item", "category": "knowledge", "text": "数の大小や順序を考えて、数の系列を作り、数直線の上に表す", "keywords": ["大小", "順序", "数直線"]},
+        {"id": "math-g1-A-1-a-e", "code": "8250213111400000", "no": "ア(エ)", "kind": "item", "category": "knowledge", "text": "一つの数をほかの数の和や差としてみるなど、ほかの数と関係付けてみる", "keywords": ["和や差"]},
+        {"id": "math-g1-A-1-a-o", "code": "8250213111500000", "no": "ア(オ)", "kind": "item", "category": "knowledge", "text": "2位数の表し方を理解する", "keywords": ["2位数"]},
+        {"id": "math-g1-A-1-a-ka", "code": "8250213111600000", "no": "ア(カ)", "kind": "item", "category": "knowledge", "text": "簡単な場合について、3位数の表し方を知る", "keywords": ["3位数"]},
+        {"id": "math-g1-A-1-a-ki", "code": "8250213111700000", "no": "ア(キ)", "kind": "item", "category": "knowledge", "text": "数を、十を単位としてみる", "keywords": ["十を単位"]},
+        {"id": "math-g1-A-1-a-ku", "code": "8250213111800000", "no": "ア(ク)", "kind": "item", "category": "knowledge", "text": "具体物をまとめて数えたり等分したりして整理し、表す", "keywords": ["等分"]},
+        {"id": "math-g1-A-1-i-a", "code": "8250213112100000", "no": "イ(ア)", "kind": "item", "category": "thinking", "text": "数のまとまりに着目し、数の大きさの比べ方や数え方を考え、日常生活に生かす"}
+      ]},
+      {"id": "math-g1-A-2", "code": "8250213120000000", "no": "(2)", "kind": "section", "title": "加法及び減法", "children": [
+        {"id": "math-g1-A-2-a-a", "code": "8250213121100000", "no": "ア(ア)", "kind": "item", "category": "knowledge", "text": "加法と減法の意味を理解し、それらが用いられる場合を知る", "keywords": ["加法", "減法"]},
+        {"id": "math-g1-A-2-a-i", "code": "8250213121200000", "no": "ア(イ)", "kind": "item", "category": "knowledge", "text": "加法と減法が用いられる場面を式に表し、式を読み取る", "keywords": ["式"]},
+        {"id": "math-g1-A-2-a-u", "code": "8250213121300000", "no": "ア(ウ)", "kind": "item", "category": "knowledge", "text": "1位数と1位数の加法と、その逆の減法の計算が確実にできる", "keywords": ["1位数と1位数の加法"]},
+        {"id": "math-g1-A-2-a-e", "code": "8250213121400000", "no": "ア(エ)", "kind": "item", "category": "knowledge", "text": "簡単な場合について、2位数などでも加法と減法ができることを知る"},
+        {"id": "math-g1-A-2-i-a", "code": "8250213122100000", "no": "イ(ア)", "kind": "item", "category": "thinking", "text": "数量の関係に着目し、計算の意味や計算の仕方を考え、日常生活に生かす"}
+      ]}
+    ]},
+    {"id": "math-g1-B", "code": "8250213200000000", "no": "B", "kind": "section", "title": "図形", "children": [
+      {"id": "math-g1-B-1", "code": "8250213210000000", "no": "(1)", "kind": "section", "title": "身の回りにあるものの形", "children": [
+        {"id": "math-g1-B-1-a-a", "code": "8250213211100000", "no": "ア(ア)", "kind": "item", "category": "knowledge", "text": "ものの形を認め、形の特徴を知る", "keywords": ["形"]},
+        {"id": "math-g1-B-1-a-i", "code": "8250213211200000", "no": "ア(イ)", "kind": "item", "category": "knowledge", "text": "具体物を用いて形を作ったり分解したりする"},
+        {"id": "math-g1-B-1-a-u", "code": "8250213211300000", "no": "ア(ウ)", "kind": "item", "category": "knowledge", "text": "前後、左右、上下など方向や位置についての言葉を用いて、ものの位置を表す", "keywords": ["前後、左右、上下"]},
+        {"id": "math-g1-B-1-i-a", "code": "8250213212100000", "no": "イ(ア)", "kind": "item", "category": "thinking", "text": "ものの形に着目し、身の回りにあるものの特徴を捉え、具体的な操作を通して形の構成を考える"}
+      ]}
+    ]},
+    {"id": "math-g1-C", "code": "8250213300000000", "no": "C", "kind": "section", "title": "測定", "children": [
+      {"id": "math-g1-C-1", "code": "8250213310000000", "no": "(1)", "kind": "section", "title": "身の回りのものの大きさ", "children": [
+        {"id": "math-g1-C-1-a-a", "code": "8250213311100000", "no": "ア(ア)", "kind": "item", "category": "knowledge", "text": "長さ、広さ、かさなどの量を、具体的な操作で直接比べたり、他のものを用いて比べたりする", "keywords": ["長さ、広さ、かさ"]},
+        {"id": "math-g1-C-1-a-i", "code": "8250213311200000", "no": "ア(イ)", "kind": "item", "category": "knowledge", "text": "身の回りにあるものの大きさを単位として、その幾つ分かで大きさを比べる", "keywords": ["単位"]},
+        {"id": "math-g1-C-1-i-a", "code": "8250213312100000", "no": "イ(ア)", "kind": "item", "category": "thinking", "text": "身の回りのものの特徴に着目し、量の大きさの比べ方を見いだす"}
+      ]},
+      {"id": "math-g1-C-2", "code": "8250213320000000", "no": "(2)", "kind": "section", "title": "時刻", "children": [
+        {"id": "math-g1-C-2-a-a", "code": "8250213321100000", "no": "ア(ア)", "kind": "item", "category": "knowledge", "text": "日常生活の中で時刻を読む", "keywords": ["時刻"]},
+        {"id": "math-g1-C-2-i-a", "code": "8250213322100000", "no": "イ(ア)", "kind": "item", "category": "thinking", "text": "時刻の読み方を用いて、時刻と日常生活を関連付ける"}
+      ]}
+    ]},
+    {"id": "math-g1-D", "code": "8250213400000000", "no": "D", "kind": "section", "title": "データの活用", "children": [
+      {"id": "math-g1-D-1", "code": "8250213410000000", "no": "(1)", "kind": "section", "title": "数量の整理", "children": [
+        {"id": "math-g1-D-1-a-a", "code": "8250213411100000", "no": "ア(ア)", "kind": "item", "category": "knowledge", "text": "ものの個数を簡単な絵や図に表し、それらを読み取る", "keywords": ["絵や図"]},
+        {"id": "math-g1-D-1-i-a", "code": "8250213412100000", "no": "イ(ア)", "kind": "item", "category": "thinking", "text": "データの個数に着目し、身の回りの事象の特徴を捉える"}
+      ]}
+    ]},
+    {"id": "math-g1-activity", "code": "8250213500000000", "no": "", "kind": "section", "title": "数学的活動", "children": [
+      {"id": "math-g1-activity-1-a", "code": "8250213511000000", "no": "(1)ア", "kind": "activity", "text": "身の回りの事象を観察したり具体物を操作したりして、数量や形を見いだす活動"},
+      {"id": "math-g1-activity-1-i", "code": "8250213512000000", "no": "(1)イ", "kind": "activity", "text": "日常生活の問題を、具体物などを用いて解決し、結果を確かめる活動"},
+      {"id": "math-g1-activity-1-u", "code": "8250213513000000", "no": "(1)ウ", "kind": "activity", "text": "算数の問題を、具体物などを用いて解決し、結果を確かめる活動"},
+      {"id": "math-g1-activity-1-e", "code": "8250213514000000", "no": "(1)エ", "kind": "activity", "text": "問題解決の過程や結果を、具体物や図などを用いて表現する活動"}
+    ]},
+    {"id": "math-g1-terms", "code": "8250213600000000", "no": "", "kind": "section", "title": "用語・記号", "children": [
+      {"id": "math-g1-terms-1", "code": "8250213601000000", "no": "", "kind": "term", "text": "一の位"},
+      {"id": "math-g1-terms-2", "code": "8250213602000000", "no": "", "kind": "term", "text": "十の位"},
+      {"id": "math-g1-terms-3", "code": "8250213603000000", "no": "", "kind": "term", "text": "＋"},
+      {"id": "math-g1-terms-4", "code": "8250213604000000", "no": "", "kind": "term", "text": "－"},
+      {"id": "math-g1-terms-5", "code": "8250213605000000", "no": "", "kind": "term", "text": "＝"}
+    ]}
+  ]
+}

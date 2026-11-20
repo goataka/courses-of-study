@@ -1,0 +1,117 @@
+{
+  "id": "math-g5",
+  "subject": "math",
+  "grades": [5],
+  "name": "第5学年",
+  "code": "8250250000000000",
+  "goals": [
+    {"id": "math-g5-goal-1", "code": "8250252100000000", "no": "(1)", "kind": "goal", "category": "knowledge", "text": "整数の性質、分数の意味、小数と分数の計算の意味、面積の公式、図形の意味と性質、図形の体積、速さ、割合、帯グラフなどを理解する。小数や分数の計算、図形の性質の調べ方、図形の面積や体積の求め方、表やグラフへの表現などの技能を身に付ける"},
+    {"id": "math-g5-goal-2", "code": "8250252200000000", "no": "(2)", "kind": "goal", "category": "thinking", "text": "数とその表現や計算の意味に着目し、目的に合った表現方法を用いて、数の性質や計算の仕方を考察する力を養う。図形の構成要素や図形間の関係に着目し、図形の性質や計量を考察する力を養う。伴って変わる二つの数量やその関係に着目し、変化や対応の特徴を見いだして、二つの数量の関係を表や式を用いて考察する力を養う。目的に応じてデータを収集し、データの特徴や傾向に着目して表やグラフに的確に表現し、それらを用いて問題解決したり、解決の過程や結果を多面的に捉え考察したりする力を養う"},
+    {"id": "math-g5-goal-3", "code": "8250252300000000", "no": "(3)", "kind": "goal", "category": "attitude", "text": "数学的に表現し処理したことを振り返り、多面的に捉え検討して、よりよいものを求めて粘り強く考える態度を養う。数学のよさに気付き、学習したことを生活や学習に活用しようとする態度を養う"}
+  ],
+  "contents": [
+    {"id": "math-g5-A", "code": "8250253100000000", "no": "A", "kind": "section", "title": "数と計算", "children": [
+      {"id": "math-g5-A-1", "code": "8250253110000000", "no": "(1)", "kind": "section", "title": "整数の性質及び整数の構成", "children": [
+        {"id": "math-g5-A-1-a-a", "code": "8250253111100000", "no": "ア(ア)", "kind": "item", "category": "knowledge", "text": "整数は、観点を決めると偶数と奇数に類別されることを知る", "keywords": ["偶数", "奇数"]},
+        {"id": "math-g5-A-1-a-i", "code": "8250253111200000", "no": "ア(イ)", "kind": "item", "category": "knowledge", "text": "約数、倍数を知る", "keywords": ["約数", "倍数"]},
+        {"id": "math-g5-A-1-i-a", "code": "8250253112100000", "no": "イ(ア)", "kind": "item", "category": "thinking", "text": "乗法と除法に着目し、観点を決めて整数を類別する仕方を考えたり、数の構成を考察したりし、日常生活に生かす"}
+      ]},
+      {"id": "math-g5-A-2", "code": "8250253120000000", "no": "(2)", "kind": "section", "title": "整数及び小数の表し方", "children": [
+        {"id": "math-g5-A-2-a-a", "code": "8250253121100000", "no": "ア(ア)", "kind": "item", "category": "knowledge", "text": "ある数の10倍、100倍、1000倍、1/10、1/100 などの大きさの数を、小数点の位置を移してつくる", "keywords": ["小数点の位置"]},
+        {"id": "math-g5-A-2-i-a", "code": "8250253122100000", "no": "イ(ア)", "kind": "item", "category": "thinking", "text": "数の表し方の仕組みに着目し、数の相対的な大きさを考察し、計算などに有効に生かす"}
+      ]},
+      {"id": "math-g5-A-3", "code": "8250253130000000", "no": "(3)", "kind": "section", "title": "小数の乗法及び除法", "children": [
+        {"id": "math-g5-A-3-a-a", "code": "8250253131100000", "no": "ア(ア)", "kind": "item", "category": "knowledge", "text": "乗数や除数が小数である場合の、小数の乗法と除法の意味を理解する", "keywords": ["乗数や除数が小数"]},
+        {"id": "math-g5-A-3-a-i", "code": "8250253131200000", "no": "ア(イ)", "kind": "item", "category": "knowledge", "text": "小数の乗法と除法の計算ができる。余りの大きさを理解する", "keywords": ["余りの大きさ"]},
+        {"id": "math-g5-A-3-a-u", "code": "8250253131300000", "no": "ア(ウ)", "kind": "item", "category": "knowledge", "text": "小数の乗法と除法についても、整数の場合と同じ関係や法則が成り立つことを理解する"},
+        {"id": "math-g5-A-3-i-a", "code": "8250253132100000", "no": "イ(ア)", "kind": "item", "category": "thinking", "text": "乗法と除法の意味に着目し、乗数や除数が小数である場合まで数の範囲を広げて、乗法と除法の意味を捉え直す。それらの計算の仕方を考え、日常生活に生かす"}
+      ]},
+      {"id": "math-g5-A-4", "code": "8250253140000000", "no": "(4)", "kind": "section", "title": "分数", "children": [
+        {"id": "math-g5-A-4-a-a", "code": "8250253141100000", "no": "ア(ア)", "kind": "item", "category": "knowledge", "text": "整数や小数を分数の形に直したり、分数を小数で表したりする", "keywords": ["分数"]},
+        {"id": "math-g5-A-4-a-i", "code": "8250253141200000", "no": "ア(イ)", "kind": "item", "category": "knowledge", "text": "整数の除法の結果は、分数を用いると常に一つの数として表せることを理解する"},
+        {"id": "math-g5-A-4-a-u", "code": "8250253141300000", "no": "ア(ウ)", "kind": "item", "category": "knowledge", "text": "一つの分数の分子と分母に同じ数を乗除してできる分数は、元の分数と同じ大きさを表すことを理解する"},
+        {"id": "math-g5-A-4-a-e", "code": "8250253141400000", "no": "ア(エ)", "kind": "item", "category": "knowledge", "text": "分数の相等と大小を知り、大小を比べる", "keywords": ["相等と大小"]},
+        {"id": "math-g5-A-4-i-a", "code": "8250253142100000", "no": "イ(ア)", "kind": "item", "category": "thinking", "text": "数を構成する単位に着目し、数の相等と大小関係を考察する"},
+        {"id": "math-g5-A-4-i-i", "code": "8250253142200000", "no": "イ(イ)", "kind": "item", "category": "thinking", "text": "分数の表現に着目し、除法の結果の表し方を振り返り、分数の意味をまとめる"}
+      ]},
+      {"id": "math-g5-A-5", "code": "8250253150000000", "no": "(5)", "kind": "section", "title": "分数の加法及び減法", "children": [
+        {"id": "math-g5-A-5-a-a", "code": "8250253151100000", "no": "ア(ア)", "kind": "item", "category": "knowledge", "text": "異分母の分数の加法と減法の計算ができる", "keywords": ["異分母の分数"]},
+        {"id": "math-g5-A-5-i-a", "code": "8250253152100000", "no": "イ(ア)", "kind": "item", "category": "thinking", "text": "分数の意味や表現に着目し、計算の仕方を考える"}
+      ]},
+      {"id": "math-g5-A-6", "code": "8250253160000000", "no": "(6)", "kind": "section", "title": "数量の関係を表す式", "children": [
+        {"id": "math-g5-A-6-a-a", "code": "8250253161100000", "no": "ア(ア)", "kind": "item", "category": "knowledge", "text": "数量の関係を表す式の理解を深める"},
+        {"id": "math-g5-A-6-i-a", "code": "8250253162100000", "no": "イ(ア)", "kind": "item", "category": "thinking", "text": "二つの数量の対応や変わり方に着目し、簡単な式で表されている関係を考察する"}
+      ]}
+    ]},
+    {"id": "math-g5-B", "code": "8250253200000000", "no": "B", "kind": "section", "title": "図形", "children": [
+      {"id": "math-g5-B-1", "code": "8250253210000000", "no": "(1)", "kind": "section", "title": "平面図形", "children": [
+        {"id": "math-g5-B-1-a-a", "code": "8250253211100000", "no": "ア(ア)", "kind": "item", "category": "knowledge", "text": "図形の形や大きさが決まる要素を理解する。図形の合同を理解する", "keywords": ["合同"]},
+        {"id": "math-g5-B-1-a-i", "code": "8250253211200000", "no": "ア(イ)", "kind": "item", "category": "knowledge", "text": "三角形や四角形など多角形の簡単な性質を理解する", "keywords": ["多角形"]},
+        {"id": "math-g5-B-1-a-u", "code": "8250253211300000", "no": "ア(ウ)", "kind": "item", "category": "knowledge", "text": "円と関連させて、正多角形の基本的な性質を知る", "keywords": ["正多角形"]},
+        {"id": "math-g5-B-1-a-e", "code": "8250253211400000", "no": "ア(エ)", "kind": "item", "category": "knowledge", "text": "円周率の意味を理解し、用いる", "keywords": ["円周率"]},
+        {"id": "math-g5-B-1-i-a", "code": "8250253212100000", "no": "イ(ア)", "kind": "item", "category": "thinking", "text": "図形の構成要素と図形間の関係に着目し、構成の仕方を考察する。図形の性質を見いだし、その性質を筋道を立てて考え説明する"}
+      ]},
+      {"id": "math-g5-B-2", "code": "8250253220000000", "no": "(2)", "kind": "section", "title": "立体図形", "children": [
+        {"id": "math-g5-B-2-a-a", "code": "8250253221100000", "no": "ア(ア)", "kind": "item", "category": "knowledge", "text": "基本的な角柱や円柱を知る", "keywords": ["角柱", "円柱"]},
+        {"id": "math-g5-B-2-i-a", "code": "8250253222100000", "no": "イ(ア)", "kind": "item", "category": "thinking", "text": "図形の構成要素に着目し、図形の性質を見いだす。その性質を基に、既習の図形を捉え直す"}
+      ]},
+      {"id": "math-g5-B-3", "code": "8250253230000000", "no": "(3)", "kind": "section", "title": "平面図形の面積", "children": [
+        {"id": "math-g5-B-3-a-a", "code": "8250253231100000", "no": "ア(ア)", "kind": "item", "category": "knowledge", "text": "三角形、平行四辺形、ひし形、台形の面積の、計算による求め方を理解する", "keywords": ["三角形、平行四辺形、ひし形、台形の面積"]},
+        {"id": "math-g5-B-3-i-a", "code": "8250253232100000", "no": "イ(ア)", "kind": "item", "category": "thinking", "text": "図形の構成要素などに着目して、基本図形の面積の求め方を見いだす。その表現を振り返り、簡潔かつ的確な表現に高め、公式として導く", "keywords": ["公式"]}
+      ]},
+      {"id": "math-g5-B-4", "code": "8250253240000000", "no": "(4)", "kind": "section", "title": "立体図形の体積", "children": [
+        {"id": "math-g5-B-4-a-a", "code": "8250253241100000", "no": "ア(ア)", "kind": "item", "category": "knowledge", "text": "体積の単位の立方センチメートル cm³、立方メートル m³ を知る", "keywords": ["体積の単位"]},
+        {"id": "math-g5-B-4-a-i", "code": "8250253241200000", "no": "ア(イ)", "kind": "item", "category": "knowledge", "text": "立方体と直方体の体積の、計算による求め方を理解する", "keywords": ["立方体と直方体の体積"]},
+        {"id": "math-g5-B-4-i-a", "code": "8250253242100000", "no": "イ(ア)", "kind": "item", "category": "thinking", "text": "体積の単位や図形の構成要素に着目し、図形の体積の求め方を考える。体積の単位と、これまでに学習した単位との関係を考察する"}
+      ]}
+    ]},
+    {"id": "math-g5-C", "code": "8250253300000000", "no": "C", "kind": "section", "title": "変化と関係", "children": [
+      {"id": "math-g5-C-1", "code": "8250253310000000", "no": "(1)", "kind": "section", "title": "伴って変わる二つの数量", "children": [
+        {"id": "math-g5-C-1-a-a", "code": "8250253311100000", "no": "ア(ア)", "kind": "item", "category": "knowledge", "text": "簡単な場合について、比例の関係があることを知る", "keywords": ["比例"]},
+        {"id": "math-g5-C-1-i-a", "code": "8250253312100000", "no": "イ(ア)", "kind": "item", "category": "thinking", "text": "伴って変わる二つの数量を見いだして、それらの関係に着目し、表や式を用いて変化や対応の特徴を考察する"}
+      ]},
+      {"id": "math-g5-C-2", "code": "8250253320000000", "no": "(2)", "kind": "section", "title": "異種の二つの量の割合として捉えられる数量", "children": [
+        {"id": "math-g5-C-2-a-a", "code": "8250253321100000", "no": "ア(ア)", "kind": "item", "category": "knowledge", "text": "速さなど単位量当たりの大きさの意味と表し方を理解し、求める", "keywords": ["速さ", "単位量当たりの大きさ"]},
+        {"id": "math-g5-C-2-i-a", "code": "8250253322100000", "no": "イ(ア)", "kind": "item", "category": "thinking", "text": "異種の二つの量の割合として捉えられる数量の関係に着目し、目的に応じて大きさを比べたり表現したりする方法を考察し、日常生活に生かす"}
+      ]},
+      {"id": "math-g5-C-3", "code": "8250253330000000", "no": "(3)", "kind": "section", "title": "二つの数量の関係", "children": [
+        {"id": "math-g5-C-3-a-a", "code": "8250253331100000", "no": "ア(ア)", "kind": "item", "category": "knowledge", "text": "ある二つの数量の関係と別の二つの数量の関係とを比べる場合に、割合を用いる場合があることを理解する", "keywords": ["割合"]},
+        {"id": "math-g5-C-3-a-i", "code": "8250253331200000", "no": "ア(イ)", "kind": "item", "category": "knowledge", "text": "百分率を用いた表し方を理解し、割合などを求める", "keywords": ["百分率"]},
+        {"id": "math-g5-C-3-i-a", "code": "8250253332100000", "no": "イ(ア)", "kind": "item", "category": "thinking", "text": "日常の事象における数量の関係に着目し、図や式などを用いて、ある二つの数量の関係と別の二つの数量の関係との比べ方を考察し、日常生活に生かす"}
+      ]}
+    ]},
+    {"id": "math-g5-D", "code": "8250253400000000", "no": "D", "kind": "section", "title": "データの活用", "children": [
+      {"id": "math-g5-D-1", "code": "8250253410000000", "no": "(1)", "kind": "section", "title": "データの収集とその分析", "children": [
+        {"id": "math-g5-D-1-a-a", "code": "8250253411100000", "no": "ア(ア)", "kind": "item", "category": "knowledge", "text": "円グラフや帯グラフの特徴と用い方を理解する", "keywords": ["円グラフ", "帯グラフ"]},
+        {"id": "math-g5-D-1-a-i", "code": "8250253411200000", "no": "ア(イ)", "kind": "item", "category": "knowledge", "text": "データの収集や適切な手法の選択など、統計的な問題解決の方法を知る", "keywords": ["統計的な問題解決"]},
+        {"id": "math-g5-D-1-i-a", "code": "8250253412100000", "no": "イ(ア)", "kind": "item", "category": "thinking", "text": "目的に応じてデータを集めて分類整理し、データの特徴や傾向に着目する。問題を解決するために適切なグラフを選択して判断し、その結論を多面的に捉え考察する"}
+      ]},
+      {"id": "math-g5-D-2", "code": "8250253420000000", "no": "(2)", "kind": "section", "title": "測定した結果を平均する方法", "children": [
+        {"id": "math-g5-D-2-a-a", "code": "8250253421100000", "no": "ア(ア)", "kind": "item", "category": "knowledge", "text": "平均の意味を理解する", "keywords": ["平均"]},
+        {"id": "math-g5-D-2-i-a", "code": "8250253422100000", "no": "イ(ア)", "kind": "item", "category": "thinking", "text": "概括的に捉えることに着目し、測定した結果を平均する方法を考察し、学習や日常生活に生かす"}
+      ]}
+    ]},
+    {"id": "math-g5-activity", "code": "8250253500000000", "no": "", "kind": "section", "title": "数学的活動", "children": [
+      {"id": "math-g5-activity-1-a", "code": "8250253511000000", "no": "(1)ア", "kind": "activity", "text": "日常の事象から算数の問題を見いだして解決し、結果を確かめたり、日常生活などに生かしたりする活動"},
+      {"id": "math-g5-activity-1-i", "code": "8250253512000000", "no": "(1)イ", "kind": "activity", "text": "算数の学習場面から算数の問題を見いだして解決し、結果を確かめたり、発展的に考察したりする活動"},
+      {"id": "math-g5-activity-1-u", "code": "8250253513000000", "no": "(1)ウ", "kind": "activity", "text": "問題解決の過程や結果を、図や式などを用いて数学的に表現し伝え合う活動"}
+    ]},
+    {"id": "math-g5-terms", "code": "8250253600000000", "no": "", "kind": "section", "title": "用語・記号", "children": [
+      {"id": "math-g5-terms-1", "code": "8250253601000000", "no": "", "kind": "term", "text": "最大公約数"},
+      {"id": "math-g5-terms-2", "code": "8250253602000000", "no": "", "kind": "term", "text": "最小公倍数"},
+      {"id": "math-g5-terms-3", "code": "8250253603000000", "no": "", "kind": "term", "text": "通分"},
+      {"id": "math-g5-terms-4", "code": "8250253604000000", "no": "", "kind": "term", "text": "約分"},
+      {"id": "math-g5-terms-5", "code": "8250253605000000", "no": "", "kind": "term", "text": "底面"},
+      {"id": "math-g5-terms-6", "code": "8250253606000000", "no": "", "kind": "term", "text": "側面"},
+      {"id": "math-g5-terms-7", "code": "8250253607000000", "no": "", "kind": "term", "text": "比例"},
+      {"id": "math-g5-terms-8", "code": "8250253608000000", "no": "", "kind": "term", "text": "％"}
+    ]}
+  ],
+  "handling": [
+    {"id": "math-g5-handling-1", "code": "8250255100000000", "no": "(1)", "kind": "handling", "text": "最大公約数や最小公倍数を形式的に求めることに偏らず、具体的な場面に即して取り扱う", "keywords": ["最大公約数", "最小公倍数"], "refs": ["math-g5-A-1-a-i"]},
+    {"id": "math-g5-handling-2", "code": "8250255200000000", "no": "(2)", "kind": "handling", "text": "平面を合同な図形で敷き詰めるなどの操作的な活動を重視するよう配慮する", "refs": ["math-g5-B-1"]},
+    {"id": "math-g5-handling-3", "code": "8250255300000000", "no": "(3)", "kind": "handling", "text": "円周率は 3.14 を用いる", "keywords": ["3.14"], "refs": ["math-g5-B-1-a-e"]},
+    {"id": "math-g5-handling-4", "code": "8250255400000000", "no": "(4)", "kind": "handling", "text": "歩合の表し方について触れる", "keywords": ["歩合"], "refs": ["math-g5-C-3-a-i"]},
+    {"id": "math-g5-handling-5", "code": "8250255500000000", "no": "(5)", "kind": "handling", "text": "複数の帯グラフを比べることにも触れる", "refs": ["math-g5-D-1"]}
+  ]
+}
