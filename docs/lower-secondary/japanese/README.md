@@ -34,3 +34,4 @@
 
 - **[指導計画の作成と内容の取扱い](planning.md)**
 - **[解説](commentary/README.md)**：学習指導要領解説の転記
+- **[評価規準](assessment/README.md)**：国立教育政策研究所の評価規準の例の転記
